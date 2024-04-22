@@ -23,7 +23,7 @@ const Services = () => {
                                     <p className={styles.main__contentItemTextContent}>- Stardust</p>
                                 </div>
                                 <div className={styles.main__contentItemImg}>
-                                    <img src={Eyes} width={250} alt="" />
+                                    <img src={Eyes} draggable="false" width={250} alt="" />
                                 </div>
                             </div>
                         </div>
@@ -36,7 +36,7 @@ const Services = () => {
                                     <p className={styles.main__contentItemTextContent}>- Cover Up</p>
                                 </div>
                                 <div className={styles.main__contentItemImg}>
-                                    <img src={Brows} width={250} alt="" />
+                                    <img src={Brows} draggable="false" width={250} alt="" />
                                 </div>
                             </div>
                         </div>
@@ -49,7 +49,7 @@ const Services = () => {
                                     <p className={styles.main__contentItemTextContent}>- 3D Lipstick</p>
                                 </div>
                                 <div className={styles.main__contentItemImg}>
-                                    <img src={Lips} width={250} alt="" />
+                                    <img src={Lips} draggable="false" width={250} alt="" />
                                 </div>
                             </div>
                         </div>
@@ -63,7 +63,7 @@ const Services = () => {
                                     <p className={styles.main__contentItemTextContent}>- Browsculpt <br/>Lamination</p>
                                 </div>
                                 <div className={styles.main__contentItemImg}>
-                                    <img src={Other} width={250} alt="" />
+                                    <img src={Other} draggable="false" width={250} alt="" />
                                 </div>
                             </div>
                         </div>

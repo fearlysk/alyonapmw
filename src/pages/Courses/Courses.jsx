@@ -17,15 +17,15 @@ const Courses = () => {
                             <div className={styles.best__contentBasicCourseSep}></div>
                             <div className={styles.best__contentBasicCourseSkills}>
                                 <div className={styles.best__contentBasicCourseSkill}>
-                                    <img src={Checkmark} width={45} alt="" />
+                                    <img draggable="false" src={Checkmark} width={45} alt="" />
                                     <p className={styles.best__contentBasicCourseSkillText}>Волшебная растушевка на бровях</p>
                                 </div>
                                 <div className={styles.best__contentBasicCourseSkill}>
-                                    <img src={Checkmark} width={45} alt="" />
+                                    <img draggable="false" src={Checkmark} width={45} alt="" />
                                     <p className={styles.best__contentBasicCourseSkillText}>Акварель Губы</p>
                                 </div>
                                 <div className={styles.best__contentBasicCourseSkill}>
-                                    <img src={Checkmark} width={45} alt="" />
+                                    <img draggable="false" src={Checkmark} width={45} alt="" />
                                     <p className={styles.best__contentBasicCourseSkillText}>Мягкая подводка для глаз</p>
                                 </div>
                             </div>
@@ -45,7 +45,7 @@ const Courses = () => {
                             <div className={styles.best__contentBasicCourseSep}></div>
                             <div className={styles.best__contentBasicCourseResults}>
                                 <div className={styles.best__contentBasicCourseResultsHeadline}>
-                                    <img className={styles.best__contentBasicCourseResultsHeadlineImg} width={60} src={Crown} alt="" />
+                                    <img className={styles.best__contentBasicCourseResultsHeadlineImg} draggable="false" width={60} src={Crown} alt="" />
                                     <h1 className={styles.best__contentBasicCourseResultsHeadlineText}>ПО ИТОГАМ ВЫ ПОЛУЧИТЕ:</h1>
                                 </div>
                                 <ul className={styles.best__contentBasicCourseResultsText}>

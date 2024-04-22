@@ -1095,12 +1095,10 @@
     }
 }
 @media screen and (max-width: 1033px) {
-    .makeup {
-        margin-top: -200px;
-    }
     .makeup__content {
         flex-direction: column;
         height: 300px;
+        margin-top: 300px;
     }
     .makeup__contentItem:nth-child(1) {
         text-align: center;
@@ -1123,7 +1121,7 @@
         margin-top: 40px;
     }
     .services {
-        margin-top: 510px;
+        margin-top: 310px;
     }
     .services__contentItemServiceHeadline {
         font-size: 32px;
@@ -1448,7 +1446,7 @@
         font-size: 18px;
     }
     .services {
-        margin-top: 570px;
+        margin-top: 370px;
     }
     .services__contentHeadlineSubText {
         font-size: 23px;
@@ -1457,8 +1455,8 @@
         font-size: 58px;
     }
     .puzzle {
-        bottom: -72%;
-        left: 70%;
+        bottom: -87%;
+        left: 80%;
     }
 }
 @media screen and (max-width: 489px) {
@@ -1668,7 +1666,7 @@
         font-size: 16px;
     }
     .services {
-        margin-top: 510px;
+        margin-top: 350px;
     }
     .services__contentHeadlineText {
         font-size: 60px;
@@ -1691,6 +1689,9 @@
         border: 0;
         border-radius: 18px;
         transition: 0.3s;
+    }
+    .makeup {
+        margin-top: -15px;
     }
 }
 @media screen and (max-width: 385px) {
@@ -1753,15 +1754,23 @@
     .applicationForm__contentFormCheckboxWrapper { 
         margin-left: 25px;
     }
+    .puzzle {
+        bottom: -81%;
+        left: 80%;
+    }
 }
 @media screen and (max-width: 325px) {
     .main__blockHeadlineText {
         font-size: 36px;
     }
     .services {
-        margin-top: 460px;
+        margin-top: 330px;
     }
     .portfolio__contentHeadlineText, .students__contentHeadlineText {
         font-size: 37px;
+    }
+    .puzzle {
+        bottom: -77%;
+        left: 80%;
     }
 }

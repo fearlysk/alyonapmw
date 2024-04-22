@@ -156,7 +156,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className={styles.main__feather}>
-                            <img className={styles.main__featherImg} src={Feather} width={400} alt="" />
+                            <img className={styles.main__featherImg} draggable="false" src={Feather} width={400} alt="" />
                         </div>
                     </div>
                 </section>
@@ -229,14 +229,14 @@ const Home = () => {
                                 </div>
                             </div>
                             <div className={styles.achievements__photo}>
-                                <img src={AchievementsAlena} width={setAchievementsImgWidth()} alt="" />
+                                <img src={AchievementsAlena} draggable="false" width={setAchievementsImgWidth()} alt="" />
                             </div>
                         </div>
                     </div>
                 </section>
                 <section className={styles.makeup} aria-labelledby="makeup">
                     <div className={styles.makeup__block}>
-                    <img className={styles.puzzle} width={setPuzzleWidth()} src={Puzzle} alt="" />
+                    <img className={styles.puzzle} draggable="false" width={setPuzzleWidth()} src={Puzzle} alt="" />
                         <div className={styles.makeup__content}>
                             <div className={styles.makeup__contentItem}>
                                 <div className={styles.makeup__contentItemHeadline}>
@@ -362,15 +362,15 @@ const Home = () => {
                                         <div className={styles.best__contentBasicCourseSep}></div>
                                         <div className={styles.best__contentBasicCourseSkills}>
                                             <div className={styles.best__contentBasicCourseSkill}>
-                                                <img src={Checkmark} width={45} alt="" />
+                                                <img draggable="false" src={Checkmark} width={45} alt="" />
                                                 <p className={styles.best__contentBasicCourseSkillText}>Волшебная растушевка на бровях</p>
                                             </div>
                                             <div className={styles.best__contentBasicCourseSkill}>
-                                                <img src={Checkmark} width={45} alt="" />
+                                                <img draggable="false" src={Checkmark} width={45} alt="" />
                                                 <p className={styles.best__contentBasicCourseSkillText}>Акварель Губы</p>
                                             </div>
                                             <div className={styles.best__contentBasicCourseSkill}>
-                                                <img src={Checkmark} width={45} alt="" />
+                                                <img draggable="false" src={Checkmark} width={45} alt="" />
                                                 <p className={styles.best__contentBasicCourseSkillText}>Мягкая подводка для глаз</p>
                                             </div>
                                         </div>
@@ -390,7 +390,7 @@ const Home = () => {
                                         <div className={styles.best__contentBasicCourseSep}></div>
                                         <div className={styles.best__contentBasicCourseResults}>
                                             <div className={styles.best__contentBasicCourseResultsHeadline}>
-                                                <img className={styles.best__contentBasicCourseResultsHeadlineImg} width={60} src={Crown} alt="" />
+                                                <img draggable="false" className={styles.best__contentBasicCourseResultsHeadlineImg} width={60} src={Crown} alt="" />
                                                 <h1 className={styles.best__contentBasicCourseResultsHeadlineText}>ПО ИТОГАМ ВЫ ПОЛУЧИТЕ:</h1>
                                             </div>
                                             <ul className={styles.best__contentBasicCourseResultsText}>
@@ -414,7 +414,7 @@ const Home = () => {
                     </div>
                     <div className={styles.best__more}>
                         <div className={styles.best__moreLocation}>
-                            <img className={styles.best__moreLocationImg} src={Location} width={75} alt="" />
+                            <img className={styles.best__moreLocationImg} draggable="false" src={Location} width={75} alt="" />
                             <p className={styles.best__moreLocationText}>Афины</p>
                         </div>
                         <div className={styles.best__moreBtnWrapper}>
@@ -430,22 +430,22 @@ const Home = () => {
                             </div>
                             <div className={styles.students__contentItems}>
                                 <div className={styles.students__contentItem}>
-                                    <img className={styles.students__contentItemImg} width={320} src={StudentsOne} alt="" />
+                                    <img className={styles.students__contentItemImg} width={320} draggable="false" src={StudentsOne} alt="" />
                                 </div>
                                 <div className={styles.students__contentItem}>
-                                    <img className={styles.students__contentItemImg} width={320} src={StudentsTwo} alt="" />
+                                    <img className={styles.students__contentItemImg} width={320} draggable="false" src={StudentsTwo} alt="" />
                                 </div>
                                 <div className={styles.students__contentItem}>
-                                    <img className={styles.students__contentItemImg} width={320} src={StudentsThree} alt="" />
+                                    <img className={styles.students__contentItemImg} width={320} draggable="false" src={StudentsThree} alt="" />
                                 </div>
                                 <div className={styles.students__contentItem}>
-                                    <img className={styles.students__contentItemImg} width={320} src={StudentsFour} alt="" />
+                                    <img className={styles.students__contentItemImg} width={320} draggable="false" src={StudentsFour} alt="" />
                                 </div>
                                 <div className={styles.students__contentItem}>
-                                    <img className={styles.students__contentItemImg} width={320} src={StudentsFive} alt="" />
+                                    <img className={styles.students__contentItemImg} width={320} draggable="false" src={StudentsFive} alt="" />
                                 </div>
                                 <div className={styles.students__contentItem}>
-                                    <img className={styles.students__contentItemImg} width={290} src={StudentsSix} alt="" />
+                                    <img className={styles.students__contentItemImg} width={290} draggable="false" src={StudentsSix} alt="" />
                                 </div>
                             </div>
                             <div className={styles.students__contentBtnWrapper}>

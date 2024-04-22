@@ -1,0 +1,92 @@
+.header__burgerLinks {
+    color: #FFFFFF;
+    width: 100%;
+    position: fixed;
+    animation: show 0.3s ease forwards;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: #030303;
+    border-bottom: 2px solid #e0a933;
+}
+.header__burgerLinksHidden {
+    color: #FFFFFF;
+    width: 100%;
+    position: absolute;
+    animation: hide 0.3s ease forwards;
+    height: 240px;
+    top: 0;
+    left: 0;
+    background-color: #030303;
+    border-bottom: 2px solid #e0a933;
+}
+.header__burgerLinksItems {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: showLinks 1s ease forwards;
+}
+.header__burgerLinksItemsHidden {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: hideLinks 0.13s ease forwards;
+}
+.header__burgerLinksItem {
+    list-style-type: none;
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    display: flex;
+    transition: 0.3s;
+    margin: 10px 0;
+    margin-right: 30px;
+}
+@keyframes show {
+    from {height: 0;}
+    to {height: 240px;}
+}
+@keyframes showLinks {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes hide {
+    from {height: 210;}
+    to {height: 0;}
+}
+@keyframes hideLinks {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+@keyframes hideBtn {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+.hide {
+    animation: hide 1s ease 3.5s forwards;
+    display: none;
+}
+.closeBtn, .closeBtnHidden  {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+}
+.closeBtnHidden {
+    animation: hideBtn 0.13s ease forwards;
+}
+.closeBtnItem, .closeBtnItemHidden {
+    padding: 10px 15px;
+    border-radius: 30px;
+    border: 1px solid #e0a933;
+    background-color: #030303;
+    color: #FFFFFF;
+}
+.closeBtnItemHidden {
+    animation: hideBtn 0.13s ease forwards;
+}

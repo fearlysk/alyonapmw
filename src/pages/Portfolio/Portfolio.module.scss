@@ -1,0 +1,589 @@
+.wrapper {
+    position: relative;
+}
+.main {
+    padding-top: 1px;
+    color: #FFFFFF;
+    font-family: 'Montserrat';
+    background: url("../../assets/Home/Best/bg.png") no-repeat;
+    background-size: cover;
+}
+.main__blockHeadline, .main__blockHeadlineStudent {
+    margin-top: 125px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main__blockHeadlineText {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 90px;
+    transition: 0.3s;
+    background-image: linear-gradient(0deg, rgba(255,119,0,0.8968837535014006) 0%, rgba(164,122,30,1) 0%, rgba(211,168,76,1) 25%, rgba(211,168,76,1) 43%, rgba(230,190,105,1) 60%, rgba(255,216,124,1) 75%, rgba(181,143,62,1) 84%, rgba(181,143,62,1) 96%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.main__contentSectionHeadline {
+    font-weight: 200;
+    text-align: center;
+    font-size: 42px;
+}
+.main__contentSectionItems {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 30px;
+    justify-items: center;
+    align-items: center;
+    place-items: center;
+    width: 50%;
+    padding: 40px 20px;
+    border: 1px solid rgb(190, 166, 32);
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 18px;
+    margin: 50px auto;
+}
+.main__contentSectionItemsTattoo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 30px;
+    justify-items: center;
+    align-items: center;
+    place-items: center;
+    width: 50%;
+    padding: 40px 20px;
+    border: 1px solid rgb(190, 166, 32);
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 18px;
+    margin: 50px auto;
+}
+.main__contentSectionItemsRemoval {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 30px;
+    justify-items: center;
+    align-items: center;
+    place-items: center;
+    width: 50%;
+    padding: 40px 20px;
+    border: 1px solid rgb(190, 166, 32);
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 18px;
+    margin: 50px auto;
+}
+.main__contentSectionItems > img, .main__contentSectionItemsTattoo > img, .main__contentSectionItemsRemoval > img {
+    border-radius: 12px;
+}
+.main__contentSectionHeadline:first-child {
+    margin-top: 15px;
+}
+.students {
+    width: 60%;
+    margin: 55px auto;
+    display: flex;
+    justify-content: center;
+}
+.applicationFormWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: url("../../assets/Portfolio/contactBg.png");
+    background-size: cover;
+}
+.applicationForm {
+    background-color: #0e0e0e;
+    width: 540px;
+    margin: 40px auto 30px auto;
+    padding: 30px;
+    border-radius: 24px;
+    z-index: 2;
+    position: relative;
+}
+.applicationFormSplash {
+    position: absolute;
+    right: -130px;
+    margin-top: 90px;
+    overflow: hidden;
+    z-index: 1;
+}
+.applicationForm__content {
+    border: 2px solid #FFD87C;
+    border-radius: 21px;
+    padding: 40px 30px;
+}
+.applicationForm__contentHeadline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.applicationForm__contentHeadlineText {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px;
+    transition: 0.3s;
+    text-align: center;
+    background-image: linear-gradient(0deg, rgba(255,119,0,0.8968837535014006) 0%, rgba(164,122,30,1) 0%, rgba(211,168,76,1) 25%, rgba(211,168,76,1) 43%, rgba(230,190,105,1) 60%, rgba(255,216,124,1) 75%, rgba(181,143,62,1) 84%, rgba(181,143,62,1) 96%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+.applicationForm__contentHeadlineSubText {
+    font-size: 19px;
+    font-weight: 300;
+    font-family: 'Montserrat';
+}
+.applicationForm__contentFormInputs {
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.applicationForm__contentFormInput {
+    margin: 5px auto;
+    width: 320px;
+    padding: 0 10px;
+    background-color: #252323;
+    border-radius: 12px;
+    border: 0;
+    color: #FFFFFF;
+    height: 60px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 18px;
+}
+.applicationForm__contentFormInput:hover {
+    cursor: pointer;
+}
+.applicationForm__contentFormBtnWrapper, .applicationForm__contentFormCheckboxWrapper {
+    display: flex;
+    justify-content: center;
+}
+.applicationForm__contentFormBtn {
+    width: 340px;
+    height: 60px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    background: linear-gradient(0deg, rgba(255,119,0,0.8968837535014006) 0%, rgba(164,122,30,1) 0%, rgba(255,216,124,1) 100%);
+    font-size: 20px;
+    border: 0;
+    border-radius: 18px;
+    transition: 0.3s;
+    margin-top: 16px;
+}
+.applicationForm__contentFormCheckboxWrapper {
+    margin: 40px 0 10px 0;
+    display: flex;
+    align-items: center;
+}
+.applicationForm__contentFormCheckbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.applicationForm__contentFormCheckbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+  .applicationForm__contentFormCheckbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 1.3em;
+    height: 1.3em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #D3A84C;
+    border-radius: 0.1em;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+  .applicationForm__contentFormCheckbox:checked+label::before {
+    border-color: #D3A84C;
+    background-color: #dfb554;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+  }
+
+  .applicationForm__contentFormCheckbox:not(:disabled):not(:checked)+label:hover::before {
+    border-color: #dfb554;
+  }
+  .applicationForm__contentFormCheckbox:not(:disabled):active+label::before {
+    background-color: #D3A84C;
+    border-color: #dfb554;
+  }
+  .applicationForm__contentFormCheckbox:focus+label::before {
+    box-shadow: 0 0 0 0.2rem rgba(248, 244, 127, 0.25);
+  }
+  .applicationForm__contentFormCheckbox:focus:not(:checked)+label::before {
+    border-color: #dfb554;
+  }
+  .applicationForm__contentFormCheckbox:disabled+label::before {
+    background-color: #dfb554;
+  }
+
+.applicationForm__contentFormCheckbox:hover, .applicationForm__contentFormCheckboxLabel:hover {
+    cursor: pointer;
+}
+.applicationForm__contentFormCheckboxLabel {
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 13px;
+    margin-left: 9px;
+}
+@media screen and (min-width: 2400px) {
+    .main__blockHeadline {
+        margin-top: 210px;
+    }
+    .main__contentSectionItems {
+        width: 70%;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .main__contentSectionItemsTattoo, .main__contentSectionItemsRemoval {
+        width: 37%;
+    }
+    .students {
+        width: 40%;
+    }
+} 
+@media screen and (min-width: 2100px) and (max-width: 2400px) {
+    .main__blockHeadline {
+        margin-top: 160px;
+    }
+    .main__contentSectionItems {
+        width: 65%;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .main__contentSectionItemsTattoo, .main__contentSectionItemsRemoval {
+        width: 50%;
+    }
+    .students {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 1900px) {
+    .main__contentSectionItems {
+        width: 55%;
+    }
+    .main__contentSectionItemsTattoo, .main__contentSectionItemsRemoval {
+        width: 55%;
+    }
+}
+@media screen and (max-width: 1485px) {
+    .main__contentSectionItems {
+        width: 65%;
+    }
+    .main__contentSectionItemsTattoo, .main__contentSectionItemsRemoval {
+        width: 60%;
+    }
+}
+@media screen and (max-width: 1360px) {
+    .main__contentSectionItemsTattoo, .main__contentSectionItemsRemoval {
+        width: 70%;
+    }
+}
+@media screen and (max-width: 1265px) {
+    .main__contentSectionItems {
+        width: 70%;
+    }
+}
+@media screen and (max-width: 1170px) {
+    .main__contentSectionItems {
+        width: 80%;
+    }
+    .main__contentSectionItemsTattoo, .main__contentSectionItemsRemoval {
+        width: 80%;
+    }
+    .students {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 1015px) {
+    .main__contentSectionItems {
+        width: 90%;
+    }
+    .main__contentSectionItemsTattoo, .main__contentSectionItemsRemoval {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 900px) {
+    .main__contentSectionItems {
+        width: 65%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+    .main__contentSectionItemsTattoo {
+        width: 65%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        justify-items: center;
+    }
+    .tattooLast {
+        grid-column: auto / span 2;
+        justify-self: center;
+    }
+    .main__contentSectionItemsRemoval {
+        width: 65%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        justify-items: center;
+
+    }
+}
+@media screen and (max-width: 845px) {
+    .main__contentSectionItems {
+        width: 75%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+    .main__contentSectionItemsTattoo, .main__contentSectionItemsRemoval {
+        width: 75%;
+    }
+}
+@media screen and (max-width: 733px) {
+    .main__blockHeadline {
+        margin-top: 150px;
+    }
+    .main__contentSectionItems {
+        width: 85%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+    .main__contentSectionItemsTattoo, .main__contentSectionItemsRemoval {
+        width: 85%;
+    }
+}
+@media screen and (max-width: 631px) {
+    .main__contentSectionItems {
+        width: 80%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .main__contentSectionItemsTattoo {
+        width: 80%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .tattooLast {
+        grid-column: auto;
+        justify-self: auto;
+    }
+    .main__contentSectionItemsRemoval {
+        width: 80%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .main__blockHeadlineText {
+        font-size: 60px;
+    }
+}
+@media screen and (max-width: 615px) {
+    .applicationForm {
+        width: 450px;
+        margin: 40px auto 30px auto;
+        padding: 20px;
+        border-radius: 24px;
+    }
+    .applicationForm__content {
+        border: 2px solid #FFD87C;
+        border-radius: 21px;
+        padding: 30px 20px;
+    }
+    .applicationForm__contentHeadline {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .applicationForm__contentHeadlineText {
+        font-size: 32px;
+    }
+    .applicationForm__contentHeadlineSubText {
+        font-size: 16px;
+        font-weight: 300;
+        font-family: 'Montserrat';
+    }
+    .applicationForm__contentFormInput {
+        width: 280px;
+        height: 40px;
+        font-size: 16px;
+    }
+    .applicationForm__contentFormBtn {
+        width: 280px;
+        height: 40px;
+        font-size: 17px;
+    }
+    .applicationForm__contentFormCheckboxWrapper { 
+        margin-left: 25px;
+    }
+}
+@media screen and (max-width: 556px) {
+    .main__contentSectionItems {
+        width: 90%;
+    }
+    .main__contentSectionItemsTattoo {
+        width: 90%;
+    }
+    .main__contentSectionItemsRemoval {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 489px) {
+    .main__contentSectionItems {
+        width: 65%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+    .main__contentSectionItemsTattoo {
+        width: 65%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+    .tattooLast {
+        grid-column: auto / span 2;
+        justify-self: center;
+    }
+    .main__contentSectionItemsRemoval {
+        width: 65%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .applicationForm {
+        width: 360px;
+        margin: 40px auto 30px auto;
+        padding: 12px;
+        border-radius: 24px;
+    }
+    .applicationForm__content {
+        border: 2px solid #FFD87C;
+        border-radius: 21px;
+        padding: 22px 12px;
+    }
+    .applicationForm__contentHeadline {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .applicationForm__contentHeadlineText {
+        font-size: 25px;
+    }
+    .applicationForm__contentHeadlineSubText {
+        font-size: 15px;
+        font-weight: 300;
+        font-family: 'Montserrat';
+    }
+    .applicationForm__contentFormInput {
+        width: 240px;
+        height: 40px;
+        font-size: 15px;
+        border-radius: 7px;
+    }
+    .applicationForm__contentFormBtn {
+        width: 240px;
+        height: 40px;
+        font-size: 16px;
+        border-radius: 6px;
+    }
+    .applicationForm__contentFormCheckboxWrapper { 
+        margin-left: 25px;
+    }
+}
+@media screen and (max-width: 456px) {
+    .main__contentSectionItems, .main__contentSectionItemsTattoo, .main__contentSectionItemsRemoval {
+        width: 75%;
+    }
+    .main__blockHeadlineText {
+        font-size: 48px;
+    }
+}
+@media screen and (max-width: 396px) {
+    .main__contentSectionItems, .main__contentSectionItemsTattoo, .main__contentSectionItemsRemoval {
+        width: 82%;
+        padding: 20px 10px;
+    }
+}
+@media screen and (max-width: 385px) {
+    .applicationForm {
+        width: 280px;
+        margin: 40px auto 30px auto;
+        padding: 12px;
+        border-radius: 24px;
+    }
+    .applicationForm__content {
+        border: 2px solid #FFD87C;
+        border-radius: 21px;
+        padding: 22px 12px;
+    }
+    .applicationForm__contentHeadline {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .applicationForm__contentHeadlineText {
+        font-size: 22px;
+        margin-top: 10px;
+    }
+    .applicationForm__contentHeadlineSubText {
+        font-size: 13px;
+        font-weight: 300;
+        font-family: 'Montserrat';
+    }
+    .applicationForm__contentFormInputs {
+        margin-top: 20px;
+    }
+    .applicationForm__contentFormInput {
+        width: 210px;
+        height: 40px;
+        font-size: 12px;
+        border-radius: 7px;
+    }
+    .applicationForm__contentFormBtn {
+        width: 215px;
+        height: 40px;
+        font-size: 16px;
+        border-radius: 6px;
+    }
+    .applicationForm__contentFormCheckboxWrapper { 
+        margin-left: 25px;
+    }
+}
+
+@media screen and (max-width: 348px) {
+    .main__contentSectionItems, .main__contentSectionItemsTattoo, .main__contentSectionItemsRemoval {
+        width: 70%;
+    }
+    .main__blockHeadlineText {
+        font-size: 36px;
+    }
+    .main__contentSectionHeadline {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 308px) {
+    .main__contentSectionItems, .main__contentSectionItemsTattoo, .main__contentSectionItemsRemoval {
+        width: 90%;
+    }
+}

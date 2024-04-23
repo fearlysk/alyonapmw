@@ -10,12 +10,14 @@
 
 }
 .notFound__contentHeadline {
-    font-family: 'Benzin';
-    background: linear-gradient(254deg, #F00 39.11%, #FF7A00 100%);
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    background-image: linear-gradient(0deg, rgba(224, 195, 26, 0.897) 0%, rgba(164,122,30,1) 0%, rgba(211,168,76,1) 25%, rgba(211,168,76,1) 43%, rgba(230,190,105,1) 60%, rgba(255,216,124,1) 75%, rgba(181,143,62,1) 84%, rgba(181,143,62,1) 96%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 0px 2px 1px rgba(255,122,0,0.5);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
     transition: 0.3s;
     font-size: 60px; 
     max-width: 80%;
@@ -27,18 +29,17 @@
     justify-content: center;
 }
 .notFound__contentItemBtn {
-    background-color: #FF6B00;
+    background: linear-gradient(0deg, rgba(255,119,0,0.8968837535014006) 0%, rgba(164,122,30,1) 0%, rgba(255,216,124,1) 100%);
     text-align: center;
     font-family: 'Montserrat';
     font-weight: 600;
     font-size: 15px;
     transition: 0.5s;
     background-size: 200% auto;
-    color: white;            
+    color: rgb(0, 0, 0);            
     margin-top: 5px;
     padding: 15px 30px;
     border: 0;
-    box-shadow: 0 0 6px #FF6B00;
     border-radius: 10px;
     outline: none;
 }

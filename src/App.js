@@ -17,6 +17,7 @@ function App() {
         <Routes>
           <Route path='*' element={<NotFound />} />
           <Route path={routes.HOME} element={<Home />} />
+          <Route path="/alyonapmw" element={<Home />} /> {/* temp, remove on deploy */}
           <Route path={routes.PORTFOLIO} element={<Portfolio />} />
           <Route path={routes.SERVICES} element={<Services />} />
           <Route path={routes.COURSES} element={<Courses />} />

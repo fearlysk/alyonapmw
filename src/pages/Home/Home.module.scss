@@ -87,7 +87,6 @@
     margin-left: auto;
     margin-right: auto;
     color: #FFFFFF;
-    background-color: #000000;
 }
 .achievements__blockHeadline {
     display: flex;
@@ -809,6 +808,9 @@
         bottom: 370px;
         left: 50%;
     }
+    .achievements {
+        background-color: #000000;
+    }
 }
 @media screen and (min-width: 2400px) {
     .main__blockHeadline {
@@ -819,10 +821,39 @@
         bottom: 370px;
         left: 60%;
     }
+    .achievements {
+        background-color: #000000;
+    }
+    .achievements__blockHeadlineText {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        border-top: 2px solid #6b5b36;
+        border-bottom: 2px solid #6b5b36;
+    }
 } 
 @media screen and (min-width: 2100px) and (max-width: 2400px) {
     .main__blockHeadline {
         margin-top: 160px;
+    }
+    .achievements {
+        background-color: #000000;
+    }
+    .achievements__blockHeadlineText {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        border-top: 2px solid #6b5b36;
+        border-bottom: 2px solid #6b5b36;
+    }
+}
+@media screen and (min-width: 1675px) and (max-width: 2100px) {
+    .achievements {
+        background-color: #000000;
+    }
+    .achievements__blockHeadlineText {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        border-top: 2px solid #6b5b36;
+        border-bottom: 2px solid #6b5b36;
     }
 }
 @media screen and (max-width: 1550px) {

@@ -521,7 +521,6 @@ const Home = () => {
                     <div className={styles.sepLine}></div>
                 </section>
                 <img className={styles.applicationFormSplash} draggable="false" width={600} src={FormSplash} alt="" />
-                <ScrollAnimation animateIn='fadeIn' animateOnce={true}>
                 <section className={styles.applicationForm} aria-labelledby="form">
                     <div className={styles.applicationForm__block}>
                         <div className={styles.applicationForm__content}>
@@ -546,7 +545,6 @@ const Home = () => {
                         </div>
                     </div>
                 </section>
-                </ScrollAnimation>
             </div>
         </div>
     )

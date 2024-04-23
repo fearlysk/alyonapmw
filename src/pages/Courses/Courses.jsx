@@ -1,12 +1,33 @@
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
 import styles from "./Courses.module.scss";
+import routes from "../../constants/routes";
 import Crown from "../../assets/Home/Best/crown.png";
 import Checkmark from "../../assets/Home/Best/checkmark.png";
+import { Link } from "react-router-dom";
 
 const Courses = () => {
+
+    const Courses = useRef(null);
+    
+        useEffect(() => {
+        let ctx = gsap.context(() => {
+    
+        gsap.from("#courses", {
+            opacity: 0,
+            ease: "power3",
+            duration: 1,
+        })
+    
+      }, Courses);
+    
+      return () => ctx.revert();
+    }, [])
+
     return (
         <div className={styles.wrapper}>
-            <div className={styles.main}>
-                <div className={styles.main__block}>
+            <div ref={Courses} className={styles.main}>
+                <div id="courses" className={styles.main__block}>
                     <div className={styles.main__blockHeadline}>
                        <h1 className={styles.main__blockHeadlineText}>ЛУЧШИЕ КУРСЫ</h1>
                        <p className={styles.main__blockHeadlineSubText}>Основные курсы</p>
@@ -91,9 +112,11 @@ const Courses = () => {
                             </div>
                         </div>
                     </div>
+                    <Link to={routes.CONTACTS}>
                     <div className={styles.courses__contentBtnWrapper}>
                         <button className={styles.courses__contentBtn}>Записаться на курс</button>
                     </div>
+                    </Link>
                 </div>
             </div>
         </div>

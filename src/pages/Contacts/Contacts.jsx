@@ -1,13 +1,34 @@
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
 import styles from "./Contacts.module.scss";
+import { Link } from "react-router-dom";
 import Instagram from "../../assets/Contacts/instagram.png";
 import Mail from "../../assets/Contacts/mail.png";
 import Phone from "../../assets/Contacts/phone.png";
 
 const Contacts = () => {
+
+    const Contacts = useRef(null);
+    
+        useEffect(() => {
+        let ctx = gsap.context(() => {
+    
+        gsap.from("#contacts", {
+            scale: 0.5,
+            opacity: 0,
+            ease: "power3",
+            duration: 1,
+        })
+    
+      }, Contacts);
+    
+      return () => ctx.revert();
+    }, [])
+
     return (
         <div className={styles.wrapper}>
-            <div className={styles.main}>
-                <div className={styles.main__block}>
+            <div ref={Contacts} className={styles.main}>
+                <div id="contacts" className={styles.main__block}>
                     <div className={styles.main__blockHeadline}>
                        <h1 className={styles.main__blockHeadlineText}>КОНТАКТЫ</h1>
                     </div>
@@ -37,10 +58,12 @@ const Contacts = () => {
                             </div>
                         </section>
                         <div className={styles.main__contentContacts}>
+                        <Link className={styles.instLink} to="https://www.instagram.com/alyonapopa_pmutrainer" target="_blank">
                             <div className={styles.main__contentContactsItem}>
                                 <img src={Instagram} draggable="false" alt="" />
                                 <p className={styles.main__contentContactsItemText}>@alyonapopa_pmutrainer</p>
                             </div>
+                            </Link>
                             <div className={styles.main__contentContactsItem}>
                                 <img src={Mail} draggable="false" alt="" />
                                 <p className={styles.main__contentContactsItemText}>alyona.popa@sviato.academy</p>

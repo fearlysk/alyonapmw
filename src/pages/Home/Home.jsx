@@ -1,4 +1,10 @@
+import { useEffect, useRef } from "react";
 import useWindowDimensions from "../../utils/getWindowDimensions";
+import ScrollAnimation from 'react-animate-on-scroll';
+import gsap from "gsap";
+import { Link } from "react-router-dom";
+import routes from "../../constants/routes";
+import "animate.css/animate.compat.css"
 import Alyona from "../../assets/Home/alyona.png";
 import Ellipse from "../../assets/Home/ellipse.png";
 import Euro from "../../assets/Home/euro.png";
@@ -113,11 +119,28 @@ const Home = () => {
         return puzzleWidth;
       }
 
+    const Main = useRef(null);
+
+    useEffect(() => {
+        let ctx = gsap.context(() => {
+    
+            gsap.from("#main", {
+                scale: 0.5,
+                opacity: 0,
+                ease: "power3",
+                duration: 1,
+            })
+    
+          }, Main);
+    
+          return () => ctx.revert();
+        }, [])
+
     return (
         <div className={styles.wrapper}>
             <div className={styles.container}>
-                <section className={styles.main} aria-labelledby="main">
-                    <div className={styles.main__block}>
+                <section className={styles.main} ref={Main} aria-labelledby="main">
+                    <div id="main" className={styles.main__block}>
                         <div className={styles.main__blockHeadline}>
                             <h1 className={styles.main__blockHeadlineText}>ALYONA POPA</h1>
                         </div>
@@ -140,9 +163,11 @@ const Home = () => {
                                 <div className={styles.main__aboutItemPhoto}>
                                     <img width={setImgWidth()} src={Alyona} draggable="false" alt="" />
                                 </div>
+                                <Link to={routes.CONTACTS}>
                                 <div className={styles.main__aboutItemBtnWrapper}>
                                     <button className={styles.main__aboutItemBtn}>Записаться на курс <img width={setEuroWidth()} className={styles.main__aboutItemEuro} draggable="false" src={Euro} alt="" /></button>
                                 </div>
+                                </Link>
                             </div>
                             <div className={styles.main__aboutItem}>
                                 <div className={styles.main__aboutItemText}>
@@ -162,26 +187,31 @@ const Home = () => {
                 </section>
                 <section className={styles.achievements} aria-labelledby="achievements">
                     <div className={styles.achievements__block}>
-                        <div className={styles.achievements__blockHeadline}>
-                            <h1 className={styles.achievements__blockHeadlineText}>Косметология, мастер маникюра, подолог,  визажист-стилист, мастер и тренер перманентного макияжа...<br />
-                            Более 15 лет опыта, шишек, взлетов и падений</h1>
-                        </div>
-                        <div className={styles.achievements__content}>
-                            <div className={styles.achievements__contentQuote}>
-                                <div className={styles.achievements__contentQuoteItem}>
-                                    <QuoteLeft />
-                                </div>
-                                <div className={styles.achievements__contentQuoteItem}>
-                                    <p>Уметь зарабатывать - навык, который я выработала, сменив несколько стран и сфер деятельности. 
-                                        Будучи молодой и неопытной, оставшись одной с маленьким ребёнком на руках, нужно было найти способ обеспечить свою семью.</p>
-                                        <br />
-                                    <p>Мне есть чем поделиться. Я изнутри знакома с кухней сферы красоты и теперь точно знаю, где прячутся <span style={{fontWeight: "600"}}>самые высокие доходы.</span></p>
-                                </div>
-                                <div className={styles.achievements__contentQuoteItem}>
-                                    <QuoteRight />
-                                </div>
+                        <ScrollAnimation animateIn='fadeIn' animateOnce={true}>
+                            <div className={styles.achievements__blockHeadline}>
+                                <h1 className={styles.achievements__blockHeadlineText}>Косметология, мастер маникюра, подолог,  визажист-стилист, мастер и тренер перманентного макияжа...<br />
+                                Более 15 лет опыта, шишек, взлетов и падений</h1>
                             </div>
+                        </ScrollAnimation>
+                        <div className={styles.achievements__content}>
+                                <div className={styles.achievements__contentQuote}>
+                                <ScrollAnimation animateIn='bounceInLeft' animateOnce={true}>
+                                    <div className={styles.achievements__contentQuoteItem}>
+                                        <QuoteLeft />
+                                    </div>
+                                    <div className={styles.achievements__contentQuoteItem}>
+                                        <p>Уметь зарабатывать - навык, который я выработала, сменив несколько стран и сфер деятельности. 
+                                            Будучи молодой и неопытной, оставшись одной с маленьким ребёнком на руках, нужно было найти способ обеспечить свою семью.</p>
+                                            <br />
+                                        <p>Мне есть чем поделиться. Я изнутри знакома с кухней сферы красоты и теперь точно знаю, где прячутся <span style={{fontWeight: "600"}}>самые высокие доходы.</span></p>
+                                    </div>
+                                    <div className={styles.achievements__contentQuoteItem}>
+                                        <QuoteRight />
+                                    </div>
+                                </ScrollAnimation>
+                                </div>
                             <div className={styles.achievements__contentTitles}>
+                            <ScrollAnimation animateIn='fadeIn' animateOnce={true}>
                                 <div className={styles.achievements__contentTitlesItem}>
                                     <div className={styles.achievements__contentTitlesItemIcon}>
                                         <Trophy />
@@ -191,6 +221,8 @@ const Home = () => {
                                         <p>на International Championship IV 2021, Interunim II 2020, International PMU Tournament Beauty Expo 2019</p>
                                     </div>
                                 </div>
+                                </ScrollAnimation>
+                                <ScrollAnimation animateIn='fadeIn' animateOnce={true}>
                                 <div className={styles.achievements__contentTitlesItem}>
                                     <div className={styles.achievements__contentTitlesItemIcon}>
                                         <Master />
@@ -200,6 +232,8 @@ const Home = () => {
                                         <p>в Афинах на чемпионате Worlds Greece Cyprus</p>
                                     </div>
                                 </div>
+                                </ScrollAnimation>
+                                <ScrollAnimation animateIn='fadeIn' animateOnce={true}>
                                 <div className={styles.achievements__contentTitlesItem}>
                                     <div className={styles.achievements__contentTitlesItemIcon}>
                                         <Judge />
@@ -209,6 +243,8 @@ const Home = () => {
                                         <p>IBV World Beauty Voyage Молдовы 2021</p>
                                     </div>
                                 </div>
+                                </ScrollAnimation>
+                                <ScrollAnimation animateIn='fadeIn' animateOnce={true}>
                                 <div className={styles.achievements__contentTitlesItem}>
                                     <div className={styles.achievements__contentTitlesItemIcon}>
                                         <Certificate />
@@ -218,6 +254,8 @@ const Home = () => {
                                         <p>перманентного макияжа в Greece Athens</p>
                                     </div>
                                 </div>
+                                </ScrollAnimation>
+                                <ScrollAnimation animateIn='fadeIn' animateOnce={true}>
                                 <div className={styles.achievements__contentTitlesItem}>
                                     <div className={styles.achievements__contentTitlesItemIcon}>
                                         <Trainer />
@@ -227,16 +265,20 @@ const Home = () => {
                                         <p>мастер-классов Sviato Academy в Афинах с 2022 г.</p>
                                     </div>
                                 </div>
+                                </ScrollAnimation>
                             </div>
+                            <ScrollAnimation animateIn='bounceInRight' animateOnce={true}>
                             <div className={styles.achievements__photo}>
                                 <img src={AchievementsAlena} draggable="false" width={setAchievementsImgWidth()} alt="" />
                             </div>
+                            </ScrollAnimation>
                         </div>
                     </div>
                 </section>
                 <section className={styles.makeup} aria-labelledby="makeup">
                     <div className={styles.makeup__block}>
                     <img className={styles.puzzle} draggable="false" width={setPuzzleWidth()} src={Puzzle} alt="" />
+                        <ScrollAnimation animateIn='fadeIn' animateOnce={true}>
                         <div className={styles.makeup__content}>
                             <div className={styles.makeup__contentItem}>
                                 <div className={styles.makeup__contentItemHeadline}>
@@ -251,9 +293,11 @@ const Home = () => {
                                     Узнай у меня как попасть в профессию с нуля и начать зарабатывать уже <span style={{fontWeight: "600"}}>спустя 5 дней после прохождения базового курса!</span>
                                     </p>
                                 </div>
-                                <div className={styles.makeup__contentItemBtnWrapper}>
-                                    <button className={styles.makeup__contentItemBtn}>Записаться на курс</button>
-                                </div>
+                                <Link to={routes.CONTACTS}>
+                                    <div className={styles.makeup__contentItemBtnWrapper}>
+                                        <button className={styles.makeup__contentItemBtn}>Записаться на курс</button>
+                                    </div>
+                                </Link>
                             </div>
                             <div className={styles.makeup__contentItem}>
                                 <div className={styles.makeup__contentItemImgWrapper}>
@@ -264,15 +308,19 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
+                        </ScrollAnimation>
                     </div>
                 </section>
                 <section className={styles.services} aria-labelledby="services">
                     <div className={styles.services__block}>
                         <div className={styles.services__content}>
+                            <ScrollAnimation animateIn='fadeIn' animateOnce={true}>
                             <div className={styles.services__contentHeadline}>
                                 <h1 className={styles.services__contentHeadlineText}>УСЛУГИ</h1>
                                 <h3 className={styles.services__contentHeadlineSubText}>Permanent Makeup в техниках:</h3>
                             </div>
+                            </ScrollAnimation>
+                            <ScrollAnimation animateIn='fadeIn' animateOnce={true}>
                             <div className={styles.services__contentItems}>
                             <div className={styles.services__contentItemWrapper}>
                                 <div className={styles.services__contentItem}>
@@ -311,6 +359,7 @@ const Home = () => {
                                     </div>
                                 </div>
                             </div>
+                            </ScrollAnimation>
                         </div>
                     </div>
                 </section>
@@ -321,24 +370,33 @@ const Home = () => {
                                 <h1 className={styles.portfolio__contentHeadlineText}>ПОРТФОЛИО</h1>
                             </div>
                             <div className={styles.portfolio__contentItems}>
-                                <div className={styles.portfolio__contentItem}>
-                                    <img width={setPortfolioImgWidth()} draggable="false" src={EyesOne} alt="" />
-                                </div>
-                                <div className={styles.portfolio__contentItem}>
-                                    <img width={setPortfolioImgWidth()} draggable="false" src={Lips} alt="" />
-                                </div>
-                                <div className={styles.portfolio__contentItem}>
-                                    <img width={setPortfolioImgWidth()} draggable="false" src={EyesTwo} alt="" />
-                                </div>
+                                <ScrollAnimation animateIn='bounceInLeft' animateOnce={true}>
+                                    <div className={styles.portfolio__contentItem}>
+                                        <img width={setPortfolioImgWidth()} draggable="false" src={EyesOne} alt="" />
+                                    </div>
+                                </ScrollAnimation>
+                                <ScrollAnimation animateIn='fadeIn' animateOnce={true}>
+                                    <div className={styles.portfolio__contentItem}>
+                                        <img width={setPortfolioImgWidth()} draggable="false" src={Lips} alt="" />
+                                    </div>
+                                </ScrollAnimation>
+                                <ScrollAnimation animateIn='bounceInRight' animateOnce={true}>
+                                    <div className={styles.portfolio__contentItem}>
+                                        <img width={setPortfolioImgWidth()} draggable="false" src={EyesTwo} alt="" />
+                                    </div>
+                                </ScrollAnimation>
                             </div>
                         </div>
-                        <div className={styles.portfolio__contentBtnWrapper}>
-                            <button className={styles.portfolio__contentBtn}>Смотреть больше работ</button>
-                        </div>
+                        <Link to={routes.PORTFOLIO}>
+                            <div className={styles.portfolio__contentBtnWrapper}>
+                                <button className={styles.portfolio__contentBtn}>Смотреть больше работ</button>
+                            </div>
+                        </Link>
                     </div>
                 </section>
                 <div className={styles.sep}></div>
                 <section className={styles.best} aria-labelledby="best">
+                <ScrollAnimation animateIn='fadeIn' animateOnce={true}>
                     <div className={styles.best__block}>
                         <div className={styles.best__content}>
                             <div className={styles.best__contentHeadline}>
@@ -417,10 +475,13 @@ const Home = () => {
                             <img className={styles.best__moreLocationImg} draggable="false" src={Location} width={75} alt="" />
                             <p className={styles.best__moreLocationText}>Афины</p>
                         </div>
-                        <div className={styles.best__moreBtnWrapper}>
-                            <button className={styles.best__moreBtn}>Подробнее о курсах</button>
-                        </div>
+                        <Link to={routes.COURSES}>
+                            <div className={styles.best__moreBtnWrapper}>
+                                <button className={styles.best__moreBtn}>Подробнее о курсах</button>
+                            </div>
+                        </Link>
                     </div>
+                </ScrollAnimation>
                 </section>
                 <section className={styles.students} aria-labelledby="students">
                     <div className={styles.students__block}>
@@ -428,6 +489,7 @@ const Home = () => {
                             <div className={styles.students__contentHeadline}>
                                 <h1 className={styles.students__contentHeadlineText}>РАБОТЫ СТУДЕНТОВ</h1>
                             </div>
+                            <ScrollAnimation animateIn='bounceInLeft' animateOnce={true}>
                             <div className={styles.students__contentItems}>
                                 <div className={styles.students__contentItem}>
                                     <img className={styles.students__contentItemImg} width={320} draggable="false" src={StudentsOne} alt="" />
@@ -448,14 +510,18 @@ const Home = () => {
                                     <img className={styles.students__contentItemImg} width={290} draggable="false" src={StudentsSix} alt="" />
                                 </div>
                             </div>
-                            <div className={styles.students__contentBtnWrapper}>
-                                <button className={styles.students__contentBtn}>Больше работ</button>
-                            </div>
+                            </ScrollAnimation>
+                            <Link to={routes.PORTFOLIO}>
+                                <div className={styles.students__contentBtnWrapper}>
+                                    <button className={styles.students__contentBtn}>Больше работ</button>
+                                </div>
+                            </Link>
                         </div>
                     </div>
                     <div className={styles.sepLine}></div>
                 </section>
                 <img className={styles.applicationFormSplash} draggable="false" width={600} src={FormSplash} alt="" />
+                <ScrollAnimation animateIn='fadeIn' animateOnce={true}>
                 <section className={styles.applicationForm} aria-labelledby="form">
                     <div className={styles.applicationForm__block}>
                         <div className={styles.applicationForm__content}>
@@ -480,6 +546,7 @@ const Home = () => {
                         </div>
                     </div>
                 </section>
+                </ScrollAnimation>
             </div>
         </div>
     )

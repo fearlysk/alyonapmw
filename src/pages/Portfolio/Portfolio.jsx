@@ -1,4 +1,8 @@
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
 import useWindowDimensions from "../../utils/getWindowDimensions";
+import ScrollAnimation from 'react-animate-on-scroll';
+import "animate.css/animate.compat.css"
 import styles from "./Portfolio.module.scss";
 import Eyes1 from "../../assets/Portfolio/Eyes/1.png";
 import Eyes2 from "../../assets/Portfolio/Eyes/2.png";
@@ -74,11 +78,28 @@ const Portfolio = () => {
         return imgWidth;
       }
 
+      const Portfolio = useRef(null);
+
+        useEffect(() => {
+        let ctx = gsap.context(() => {
+
+        gsap.from("#portfolio", {
+            x: -300,
+            opacity: 0,
+            ease: "power3",
+            duration: 1,
+        })
+
+      }, Portfolio);
+
+      return () => ctx.revert();
+    }, [])
+
 
     return (
-        <div className={styles.wrapper}>
+        <div className={styles.wrapper} ref={Portfolio}>
             <div className={styles.main}>
-                <div className={styles.main__block}>
+                <div id="portfolio" className={styles.main__block}>
                     <div className={styles.main__blockHeadline}>
                        <h1 className={styles.main__blockHeadlineText}>ПОРТФОЛИО</h1>
                     </div>
@@ -100,6 +121,7 @@ const Portfolio = () => {
                                 <img src={Eyes12} draggable="false" width={setImgWidth()} alt="" />
                             </div>
                         </div>
+                        <ScrollAnimation animateIn='fadeIn' animateOnce={true}>
                         <div className={styles.main__contentSection}>
                             <h1 className={styles.main__contentSectionHeadline}>БРОВИ</h1>
                             <div className={styles.main__contentSectionItems}>
@@ -117,6 +139,8 @@ const Portfolio = () => {
                                 <img src={Brows12} draggable="false" width={setImgWidth()} alt="" />
                             </div>
                         </div>
+                        </ScrollAnimation>
+                        <ScrollAnimation animateIn='bounceInLeft' animateOnce={true}>
                         <div className={styles.main__contentSection}>
                             <h1 className={styles.main__contentSectionHeadline}>ГУБЫ</h1>
                             <div className={styles.main__contentSectionItems}>
@@ -134,6 +158,8 @@ const Portfolio = () => {
                                 <img src={Lips12} draggable="false" width={setImgWidth()} alt="" />
                             </div>
                         </div>
+                        </ScrollAnimation>
+                        <ScrollAnimation animateIn='bounceInRight' animateOnce={true}>
                         <div className={styles.main__contentSection}>
                             <h1 className={styles.main__contentSectionHeadline}>МИНИ-ТАТУ</h1>
                             <div className={styles.main__contentSectionItemsTattoo}>
@@ -148,6 +174,8 @@ const Portfolio = () => {
                                 <img className={styles.tattooLast} src={MiniTattoo9} width={setImgWidth()} alt="" />
                             </div>
                         </div>
+                        </ScrollAnimation>
+                        <ScrollAnimation animateIn='fadeIn' animateOnce={true}>
                         <div className={styles.main__contentSection}>
                             <h1 className={styles.main__contentSectionHeadline}>REMOVAL</h1>
                             <div className={styles.main__contentSectionItemsRemoval}>
@@ -159,7 +187,9 @@ const Portfolio = () => {
                                 <img src={Removal6} draggable="false" width={setImgWidth()} alt="" />
                             </div>
                         </div>
+                        </ScrollAnimation>
                     </div>
+                    <ScrollAnimation animateIn='fadeIn' animateOnce={true}>
                     <div className={styles.main__contentStudent}>
                         <div className={styles.main__blockHeadlineStudent}>
                             <h1 className={styles.main__blockHeadlineText}>РАБОТЫ СТУДЕНТОВ</h1>
@@ -168,7 +198,9 @@ const Portfolio = () => {
                             <img src={Students} draggable="false" className={styles.students} alt="" />
                         </div>
                     </div>
+                    </ScrollAnimation>
                     <div className={styles.applicationFormWrapper}>
+                    <ScrollAnimation animateIn='bounceInLeft' animateOnce={true}>
                     <section className={styles.applicationForm} aria-labelledby="form">
                         <div className={styles.applicationForm__block}>
                             <div className={styles.applicationForm__content}>
@@ -193,6 +225,7 @@ const Portfolio = () => {
                             </div>
                         </div>
                     </section>
+                    </ScrollAnimation>
                     </div>
                 </div>
             </div>

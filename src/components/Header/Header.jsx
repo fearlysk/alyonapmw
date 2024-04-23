@@ -62,8 +62,12 @@ const Header = () => {
                     <div className={styles.headerContacts}>
                         <p>+30 699 40-99-468</p>
                         <div>
-                        <InstagramMini />
-                        <p className={styles.headerContacts__inst}>alyonapopa_pmutrainer</p>
+                            <Link to="https://www.instagram.com/alyonapopa_pmutrainer" target="_blank">
+                            <InstagramMini />
+                            </Link>
+                            <Link to="https://www.instagram.com/alyonapopa_pmutrainer" target="_blank">
+                            <p className={styles.headerContacts__inst}>alyonapopa_pmutrainer</p>
+                            </Link>
                         </div>
                     </div>
                      <div className={styles.header__burger} onClick={() => setIsBurgerOpened(true)}>

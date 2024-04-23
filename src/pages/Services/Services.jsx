@@ -1,14 +1,35 @@
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
 import styles from "./Services.module.scss";
+import ScrollAnimation from 'react-animate-on-scroll';
+import "animate.css/animate.compat.css"
 import Eyes from "../../assets/Services/eyes.png";
 import Brows from "../../assets/Services/brows.png";
 import Lips from "../../assets/Services/lips.png";
 import Other from "../../assets/Services/other.png";
 
 const Services = () => {
+
+    const Services = useRef(null);
+
+    useEffect(() => {
+    let ctx = gsap.context(() => {
+
+    gsap.from("#services", {
+        opacity: 0,
+        ease: "power3",
+        duration: 1,
+    })
+
+  }, Services);
+
+  return () => ctx.revert();
+}, [])
+
     return (
         <div className={styles.wrapper}>
-            <div className={styles.main}>
-                <div className={styles.main__block}>
+            <div ref={Services} className={styles.main}>
+                <div id="services" className={styles.main__block}>
                     <div className={styles.main__blockHeadline}>
                        <h1 className={styles.main__blockHeadlineText}>УСЛУГИ</h1>
                        <p className={styles.main__blockHeadlineSubText}>Permanent Makeup в техниках:</p>
@@ -27,6 +48,7 @@ const Services = () => {
                                 </div>
                             </div>
                         </div>
+                        <ScrollAnimation animateIn='bounceInLeft' animateOnce={true}>
                         <div className={styles.main__contentItemWrapper}>
                             <div className={styles.main__contentItem}>
                                 <div className={styles.main__contentItemText}>
@@ -40,6 +62,8 @@ const Services = () => {
                                 </div>
                             </div>
                         </div>
+                        </ScrollAnimation>
+                        <ScrollAnimation animateIn='bounceInRight' animateOnce={true}>
                         <div className={styles.main__contentItemWrapper}>
                             <div className={styles.main__contentItem}>
                                 <div className={styles.main__contentItemText}>
@@ -53,6 +77,8 @@ const Services = () => {
                                 </div>
                             </div>
                         </div>
+                        </ScrollAnimation>
+                        <ScrollAnimation animateIn='bounceInLeft' animateOnce={true}>
                         <div className={styles.main__contentItemWrapper}>
                             <div className={styles.main__contentItem}>
                                 <div className={styles.main__contentItemText}>
@@ -67,7 +93,9 @@ const Services = () => {
                                 </div>
                             </div>
                         </div>
+                        </ScrollAnimation>
                     </div>
+                    <ScrollAnimation animateIn='fadeIn' animateOnce={true}>
                     <section className={styles.applicationForm} aria-labelledby="form">
                         <div className={styles.applicationForm__block}>
                             <div className={styles.applicationForm__content}>
@@ -92,6 +120,7 @@ const Services = () => {
                             </div>
                         </div>
                     </section>
+                    </ScrollAnimation>
                 </div>
             </div>
         </div>

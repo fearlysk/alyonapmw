@@ -61,6 +61,18 @@
     margin-left: 30px;
     font-size: 22px;
 }
+.instLink {
+    border-bottom: 1px solid transparent;
+    transition: 0.3s;
+    padding-bottom: 3px;
+}
+.instLink:hover {
+    color: #ecb745;
+    border-bottom: 1px solid #FFD87C;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
 .main__contentContactsItem:nth-child(1) {
     margin-left: 2px;
     margin-bottom: 5px;

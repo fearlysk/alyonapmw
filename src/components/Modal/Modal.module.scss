@@ -1,0 +1,419 @@
+.modal__background {
+    background-color: rgba(0,0,0,0.35);
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 21; 
+    backdrop-filter: blur(8px); 
+}
+.modal__card {
+   color: #000;
+   background: #FFFFFF;
+   margin: 0 auto;
+   width: 50%;
+   border: 6px solid #aa9914;
+   border-radius: 16px;
+   height: auto;
+   box-shadow: 0px 0 15px #f8f861;
+}
+.modal__header {
+    text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.modal__close {
+    z-index: 4;
+    position: absolute;
+    width: 46%;
+    display: flex;
+    justify-content: flex-end;
+}
+.modal__closeThanks {
+    z-index: 4;
+    position: absolute;
+    width: 90%;
+    margin-top: -6px;
+    display: flex;
+    justify-content: flex-end;
+}
+.modal__closeWrapper {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 60px;
+    transition: 0.3s;
+}
+.modal__closeWrapper:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #dcc623;
+}
+.modal__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px 20px 30px;
+}
+.modal__formWrapper {
+    width: 100%;
+}
+.modal__headerHeadline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 93%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.modal__headerHeadline h3 {
+    font-size: 32px;
+    width: 100%;
+    font-family: 'Benzin';
+    position: relative;
+    margin-top: 40px;
+}
+.modal__headerHeadline p {
+    margin-top: 20px;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    width: 80%;
+}
+.modal__form {
+    margin-top: 30px;
+    text-align: center;
+}
+.modal__input {
+    font-size: 30px;
+    margin-bottom: 40px;
+    width: 80%;
+    border: none;
+    text-decoration: solid 1px black;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 2px solid rgba(170, 170, 170, 0.7) !important;
+    outline: none;
+}
+.modal__input::placeholder {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+.contacts__contentItemFormCheckboxText {
+    display: block;
+    margin-top: 25px;
+    position: relative;
+    padding-left: 6px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: "Montserrat";
+    font-weight: 200;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+}
+.contacts__contentItemFormCheckboxText input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.contacts__contentItemFormCheckboxCheckmark {
+    position: absolute;
+    top: -5px;
+    left: 30px;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 6px;
+}
+.contacts__contentItemFormCheckboxText:hover input ~ .contacts__contentItemFormCheckboxCheckmark {
+    background-color: #ccc;
+}
+.contacts__contentItemFormCheckboxText input:checked ~ .contacts__contentItemFormCheckboxCheckmark {
+    background-color: #e8d332;
+}
+.contacts__contentItemFormCheckboxCheckmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.contacts__contentItemFormCheckboxText input:checked ~ .contacts__contentItemFormCheckboxCheckmark:after {
+    display: block;
+}
+.contacts__contentItemFormCheckboxText {
+    margin-left: -10px;
+}
+.contacts__contentItemFormCheckboxText .contacts__contentItemFormCheckboxCheckmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+.modal__btn {
+    background-color: #c4af14;
+    border: 1px solid #70650d;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 15px;
+    height: 60px;
+    width: 90%;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 15px #c4af14;
+    border-radius: 10px;
+    outline: none;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+.modal__btn:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+@media screen and (max-width: 1420px) {
+    .modal__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 1279px) {
+    .modal__header {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 950px) {
+    .modal__close {
+        width: 63%;
+    }
+    .modal__card {
+        width: 70%;
+    }
+    .modal__contentThanks > p {
+        margin: 10px 3% !important;
+        text-align: left !important;
+    }
+    .modal__contentThanks > p:nth-child(3), p:nth-child(4) {
+        margin: 15px 8% !important;
+        text-align: left !important;
+    }
+}
+@media screen and (max-width: 762px) {
+    .modal__header {
+        font-size: 22px;
+    }
+    .modal__input {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 675px) {
+    .contacts__contentItemFormCheckboxText {
+        width: 300px;
+        text-align: center;
+        margin-left: auto;
+        padding-left: 15px;
+    }
+    .contacts__contentItemFormCheckboxCheckmark {
+        left: -10px;
+    }
+}
+@media screen and (max-width: 620px) {
+    .modal__close {
+        width: 65%;
+        margin-top: -12px;
+    }
+}
+@media screen and (max-width: 541px) {
+    .modal__close {
+        width: 74%;
+        // margin-top: -12px;
+    }
+    .modal__card {
+        width: 80%;
+    }
+    .modal__thanksHeadline {
+        font-size: 32px !important;
+    }
+}
+@media screen and (max-width: 516px) {
+    .contacts__contentItemFormCheckboxText {
+        width: 200px;
+        text-align: center;
+        margin-left: auto;
+        padding-left: 15px;
+    }
+    .contacts__contentItemFormCheckboxCheckmark {
+        left: -10px;
+    }
+}
+@media screen and (max-width: 470px) {
+    .modal__input {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .modal__btn {
+        padding: 15px 30px;
+    }
+    .modal__thanksHeadline {
+        font-size: 22px !important;
+    }
+    .modal__contentThanksNumber {
+        text-align: left !important;
+    }
+    .modal__headerHeadline h3 {
+        font-size: 25px;
+        width: 100%;
+        font-family: 'Benzin';
+        position: relative;
+        margin-top: 40px;
+    }
+    .modal__headerHeadline p {
+        margin-top: 17px;
+        font-family: 'Montserrat';
+        font-size: 16px;
+        width: 80%;
+    }
+}
+@media screen and (max-width: 281px) {
+    .modal__thanksHeadline {
+        font-size: 16px !important;
+    }
+    .modal__contentThanks > p {
+        margin: 10px 3% !important;
+        text-align: left !important;
+        font-size: 10px !important;
+        width: 100%;
+    }
+    .modal__contentThanks > p:nth-child(3), p:nth-child(4) {
+        margin: 10px 8% !important;
+        text-align: left !important;
+    }
+    .modal__headerHeadline h3 {
+        font-size: 16px;
+    }
+    .modal__headerHeadline p {
+        font-size: 11px;
+        width: 85%;
+    }
+    .contacts__contentItemFormCheckboxText { 
+        font-size: 8px;
+        padding-left: 13px;
+        width: 85%;
+    }
+}
+@media screen and (max-height: 566px) {
+    .modal__thanksHeadline {
+        font-size: 22px !important;
+    }
+    .modal__contentThanks > p {
+        margin: 7px 3% !important;
+        text-align: left !important;
+        font-size: 16px !important;
+        width: 100%;
+    }
+    .modal__contentThanks > p:nth-child(3), p:nth-child(4) {
+        margin: 10px 8% !important;
+        text-align: left !important;
+    }
+}
+.modal__thanksHeadline {
+    color: #70650d;
+    font-size: 40px;
+}
+.modal__contentThanks {
+    font-family: 'Jura', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 5px auto;
+}
+.modal__contentThanks > p {
+    margin: 30px 3%;
+    text-align: center;
+}
+.modal__contentThanks > p:nth-child(3), p:nth-child(4) {
+    margin: 40px 8%;
+    text-align: center;
+}
+.modal__contentThanksHighlighted {
+    margin-left: 5px;
+}
+.modal__contentThanksHighlighted, .modal__contentThanksNumber {
+    color: #70650d !important;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.modal__contentThanksNumber {
+    margin: 10px 0 0 0 !important;
+    text-align: center;
+    font-size: 24px;
+    width: 100%;
+    text-decoration: underline;
+}
+@media screen and (max-height: 578px) {
+    .modal__card {
+        height: 80vh;
+    }
+    .modal__input {
+        height: 10px;
+    }
+    .modal__headerHeadline h3 {
+        font-size: 16px;
+        width: 100%;
+        font-family: 'Benzin';
+        position: relative;
+        margin-top: 20px;
+    }
+    .modal__headerHeadline p {
+        margin-top: 10px;
+        font-family: 'Montserrat';
+        font-size: 12px;
+        width: 80%;
+    }
+    .modal__content {
+        margin-top: -30px;
+    }
+    .modal__input::placeholder {
+        font-size: 12px;
+    }
+    .modal__input {
+        padding-bottom: 5px;
+    }
+    .modal__btn {
+        margin-top: -20px;
+        height: 30px;
+        font-size: 9px;
+    }
+    .contacts__contentItemFormCheckboxText { 
+        margin-top: 15px;
+        font-size: 10px;
+        padding-left: 4px;
+    }
+}

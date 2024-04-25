@@ -1,5 +1,6 @@
-import { useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import gsap from "gsap";
+import http from "../../services/http";
 import useWindowDimensions from "../../utils/getWindowDimensions";
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.compat.css"
@@ -56,6 +57,7 @@ import Removal4 from "../../assets/Portfolio/Removal/4.png";
 import Removal5 from "../../assets/Portfolio/Removal/5.png";
 import Removal6 from "../../assets/Portfolio/Removal/6.png";
 import Students from "../../assets/Portfolio/students.png";
+import Modal from "../../components/Modal/Modal";
 
 const Portfolio = () => {
 
@@ -78,6 +80,40 @@ const Portfolio = () => {
         return imgWidth;
       }
 
+      const token = process.env.REACT_APP_TOKEN;
+      const chatId = process.env.REACT_APP_CHATID;
+
+      const [open, setOpen] = useState(false);
+      const [isSubmitted, setIsSubmitted] = useState(false);
+      const [name, setName] = useState('');
+      const [phoneNumber, setPhoneNumber] = useState('');
+      const [message, setMessage] = useState('');
+  
+      const sendMessage = (e) => {
+          e.preventDefault();
+              const text = `
+               Имя: ${name}                                                                                                                                                      
+               Телефон: ${phoneNumber}                                                                                                                                                       
+               Сообщение: ${message}
+             `
+              const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${text}`;
+              http(url, "GET");
+              setName('');
+              setPhoneNumber('');
+              setMessage('');
+              setIsSubmitted(true);
+              setOpen(true);
+             }
+         
+             const closeModal = () => {
+               setOpen(false);
+               setIsSubmitted(false);
+             }
+         
+             const setSubmitted = () => {
+               setIsSubmitted(true);
+             }
+
       const Portfolio = useRef(null);
 
         useEffect(() => {
@@ -98,6 +134,7 @@ const Portfolio = () => {
 
     return (
         <div className={styles.wrapper} ref={Portfolio}>
+            <Modal open={open} onClose={closeModal} isSubmitted={isSubmitted} setIsSubmitted={setSubmitted} />
             <div className={styles.main}>
                 <div id="portfolio" className={styles.main__block}>
                     <div className={styles.main__blockHeadline}>
@@ -208,17 +245,36 @@ const Portfolio = () => {
                                     <h1 className={styles.applicationForm__contentHeadlineText}>Συμπληρώστε τη φόρμα,</h1>
                                     <p className={styles.applicationForm__contentHeadlineSubText}>για να υποβάλλετε αίτημα ενδιαφέροντος</p>
                                 </div>
-                                <form className={styles.applicationForm__contentForm}>
+                                <form onSubmit={(e) => sendMessage(e)} className={styles.applicationForm__contentForm}>
                                     <div className={styles.applicationForm__contentFormInputs}>
-                                        <input className={styles.applicationForm__contentFormInput} type="text" placeholder=" &#x1F464;  Όνομα" />
-                                        <input className={styles.applicationForm__contentFormInput} type="phonenumber" placeholder=" &#x260E;  Τηλέφωνο" />
-                                        <input className={styles.applicationForm__contentFormInput} type="text" placeholder=" &#x1F5E8;  Σχόλιο" />
+                                        <input className={styles.applicationForm__contentFormInput}
+                                        type="text"
+                                        placeholder=" &#x1F464;  Όνομα"
+                                        value={name}
+                                        required
+                                        onChange={(e) => setName(e.target.value)} 
+                                        />
+                                        <input className={styles.applicationForm__contentFormInput}
+                                        type="tel"
+                                        placeholder=" &#x260E;  Τηλέφωνο"
+                                        value={phoneNumber}
+                                        required
+                                        pattern="^[+\d](?:.*\d)?$"
+                                        onChange={(e) => setPhoneNumber(e.target.value)} 
+                                        />
+                                        <input className={styles.applicationForm__contentFormInput}
+                                        type="text"
+                                        placeholder=" &#x1F5E8;  Σχόλιο"
+                                        value={message}
+                                        required
+                                        onChange={(e) => setMessage(e.target.value)}
+                                        />
                                     </div>
                                     <div className={styles.applicationForm__contentFormBtnWrapper}>
-                                        <button className={styles.applicationForm__contentFormBtn}>Υποβολή αίτησης</button>
+                                        <button type="submit" className={styles.applicationForm__contentFormBtn}>Υποβολή αίτησης</button>
                                     </div>
                                     <div className={styles.applicationForm__contentFormCheckboxWrapper}>
-                                        <input type="checkbox" className={styles.applicationForm__contentFormCheckbox} id="privacy_policy" name="privacy_policy" value="yes" />
+                                        <input type="checkbox" required className={styles.applicationForm__contentFormCheckbox} id="privacy_policy" name="privacy_policy" value="yes" />
                                         <label className={styles.applicationForm__contentFormCheckboxLabel} htmlFor="privacy_policy">Αποδέχομαι τους όρους επεξεργασίας προσωπικών δεδομένων.</label>
                                     </div>
                                 </form>

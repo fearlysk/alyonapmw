@@ -1,9 +1,10 @@
-import { useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import useWindowDimensions from "../../utils/getWindowDimensions";
 import ScrollAnimation from 'react-animate-on-scroll';
 import gsap from "gsap";
 import { Link } from "react-router-dom";
 import routes from "../../constants/routes";
+import http from "../../services/http.js";
 import "animate.css/animate.compat.css"
 import Alyona from "../../assets/Home/alyona.png";
 import Ellipse from "../../assets/Home/ellipse.png";
@@ -34,6 +35,7 @@ import StudentsFour from "../../assets/Home/Students/students4.png";
 import StudentsFive from "../../assets/Home/Students/students5.png";
 import StudentsSix from "../../assets/Home/Students/students6.png";
 import FormSplash from "../../assets/Home/splash__form.png";
+import Modal from "../../components/Modal/Modal.jsx";
 
 const Home = () => {
 
@@ -119,6 +121,40 @@ const Home = () => {
         return puzzleWidth;
       }
 
+    const token = process.env.REACT_APP_TOKEN;
+    const chatId = process.env.REACT_APP_CHATID;
+
+    const [open, setOpen] = useState(false);
+    const [isSubmitted, setIsSubmitted] = useState(false);
+    const [name, setName] = useState('');
+    const [phoneNumber, setPhoneNumber] = useState('');
+    const [message, setMessage] = useState('');
+
+    const sendMessage = (e) => {
+        e.preventDefault();
+            const text = `
+             Имя: ${name}                                                                                                                                                      
+             Телефон: ${phoneNumber}                                                                                                                                                       
+             Сообщение: ${message}
+           `
+            const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${text}`;
+            http(url, "GET");
+            setName('');
+            setPhoneNumber('');
+            setMessage('');
+            setIsSubmitted(true);
+            setOpen(true);
+           }
+       
+           const closeModal = () => {
+             setOpen(false);
+             setIsSubmitted(false);
+           }
+       
+           const setSubmitted = () => {
+             setIsSubmitted(true);
+           }
+
     const Main = useRef(null);
 
     useEffect(() => {
@@ -138,6 +174,7 @@ const Home = () => {
 
     return (
         <div className={styles.wrapper}>
+            <Modal open={open} onClose={closeModal} isSubmitted={isSubmitted} setIsSubmitted={setSubmitted} />
             <div className={styles.container}>
                 <section className={styles.main} ref={Main} aria-labelledby="main">
                     <div id="main" className={styles.main__block}>
@@ -163,11 +200,9 @@ const Home = () => {
                                 <div className={styles.main__aboutItemPhoto}>
                                     <img width={setImgWidth()} src={Alyona} draggable="false" alt="" />
                                 </div>
-                                <Link to={routes.CONTACTS}>
                                 <div className={styles.main__aboutItemBtnWrapper}>
-                                    <button className={styles.main__aboutItemBtn}>Εγγραφή σε σεμινάριο <img width={setEuroWidth()} className={styles.main__aboutItemEuro} draggable="false" src={Euro} alt="" /></button>
+                                    <button onClick={() => setOpen(true)} className={styles.main__aboutItemBtn}>Εγγραφή σε σεμινάριο <img width={setEuroWidth()} className={styles.main__aboutItemEuro} draggable="false" src={Euro} alt="" /></button>
                                 </div>
-                                </Link>
                             </div>
                             <div className={styles.main__aboutItem}>
                                 <div className={styles.main__aboutItemText}>
@@ -527,17 +562,36 @@ const Home = () => {
                                 <h1 className={styles.applicationForm__contentHeadlineText}>Συμπληρώστε τη φόρμα,</h1>
                                 <p className={styles.applicationForm__contentHeadlineSubText}>για να υποβάλλετε αίτημα ενδιαφέροντος</p>
                             </div>
-                            <form className={styles.applicationForm__contentForm}>
+                            <form onSubmit={(e) => sendMessage(e)} className={styles.applicationForm__contentForm}>
                                 <div className={styles.applicationForm__contentFormInputs}>
-                                    <input className={styles.applicationForm__contentFormInput} type="text" placeholder=" &#x1F464;  Όνομα" />
-                                    <input className={styles.applicationForm__contentFormInput} type="phonenumber" placeholder=" &#x260E;  Τηλέφωνο" />
-                                    <input className={styles.applicationForm__contentFormInput} type="text" placeholder=" &#x1F5E8;  Σχόλιο" />
+                                    <input className={styles.applicationForm__contentFormInput} 
+                                    type="text"
+                                    placeholder=" &#x1F464;  Όνομα"
+                                    value={name}
+                                    required
+                                    onChange={(e) => setName(e.target.value)} 
+                                     />
+                                    <input className={styles.applicationForm__contentFormInput}
+                                    type="tel"
+                                    placeholder=" &#x260E;  Τηλέφωνο"
+                                    value={phoneNumber}
+                                    required
+                                    pattern="^[+\d](?:.*\d)?$"
+                                    onChange={(e) => setPhoneNumber(e.target.value)} 
+                                    />
+                                    <input className={styles.applicationForm__contentFormInput}
+                                    type="text"
+                                    placeholder=" &#x1F5E8;  Σχόλιο"
+                                    value={message}
+                                    required
+                                    onChange={(e) => setMessage(e.target.value)}
+                                    />
                                 </div>
                                 <div className={styles.applicationForm__contentFormBtnWrapper}>
-                                    <button className={styles.applicationForm__contentFormBtn}>Υποβολή αίτησης</button>
+                                    <button type="submit" className={styles.applicationForm__contentFormBtn}>Υποβολή αίτησης</button>
                                 </div>
                                 <div className={styles.applicationForm__contentFormCheckboxWrapper}>
-                                    <input type="checkbox" className={styles.applicationForm__contentFormCheckbox} id="privacy_policy" name="privacy_policy" value="yes" />
+                                    <input type="checkbox" className={styles.applicationForm__contentFormCheckbox} id="privacy_policy" name="privacy_policy" value="yes" required />
                                     <label className={styles.applicationForm__contentFormCheckboxLabel} htmlFor="privacy_policy">Αποδέχομαι τους όρους επεξεργασίας προσωπικών δεδομένων.</label>
                                 </div>
                             </form>

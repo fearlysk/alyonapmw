@@ -189,6 +189,11 @@
     transition: 0.3s;
     margin-top: 16px;
 }
+.applicationForm__contentFormBtn:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    transform: scale(1.03);
+}
 .applicationForm__contentFormCheckboxWrapper {
     margin: 40px 0 10px 0;
     display: flex;

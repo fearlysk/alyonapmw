@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/alyonapmw/static/css/main.5c84f89e.css",
-    "main.js": "/alyonapmw/static/js/main.7ba18438.js",
+    "main.js": "/alyonapmw/static/js/main.792a742d.js",
     "static/css/263.bb4bd44d.chunk.css": "/alyonapmw/static/css/263.bb4bd44d.chunk.css",
-    "static/js/263.4eed8c32.chunk.js": "/alyonapmw/static/js/263.4eed8c32.chunk.js",
+    "static/js/263.5254f09c.chunk.js": "/alyonapmw/static/js/263.5254f09c.chunk.js",
     "static/css/128.429890e4.chunk.css": "/alyonapmw/static/css/128.429890e4.chunk.css",
-    "static/js/128.e6591844.chunk.js": "/alyonapmw/static/js/128.e6591844.chunk.js",
+    "static/js/128.a536037c.chunk.js": "/alyonapmw/static/js/128.a536037c.chunk.js",
     "static/css/742.fd4ee991.chunk.css": "/alyonapmw/static/css/742.fd4ee991.chunk.css",
     "static/js/742.e86a6c1d.chunk.js": "/alyonapmw/static/js/742.e86a6c1d.chunk.js",
     "static/css/348.fa136b4b.chunk.css": "/alyonapmw/static/css/348.fa136b4b.chunk.css",
-    "static/js/348.d94eb467.chunk.js": "/alyonapmw/static/js/348.d94eb467.chunk.js",
+    "static/js/348.829e14af.chunk.js": "/alyonapmw/static/js/348.829e14af.chunk.js",
     "static/css/86.4ab953ed.chunk.css": "/alyonapmw/static/css/86.4ab953ed.chunk.css",
-    "static/js/86.67a24a45.chunk.js": "/alyonapmw/static/js/86.67a24a45.chunk.js",
+    "static/js/86.424e3196.chunk.js": "/alyonapmw/static/js/86.424e3196.chunk.js",
     "static/css/255.0fe14f37.chunk.css": "/alyonapmw/static/css/255.0fe14f37.chunk.css",
     "static/js/255.c7b61f23.chunk.js": "/alyonapmw/static/js/255.c7b61f23.chunk.js",
     "static/js/270.35d2e955.chunk.js": "/alyonapmw/static/js/270.35d2e955.chunk.js",
@@ -57,17 +57,17 @@
     "static/media/crown.png": "/alyonapmw/static/media/crown.7a484f00b8f136a915cd.png",
     "index.html": "/alyonapmw/index.html",
     "main.5c84f89e.css.map": "/alyonapmw/static/css/main.5c84f89e.css.map",
-    "main.7ba18438.js.map": "/alyonapmw/static/js/main.7ba18438.js.map",
+    "main.792a742d.js.map": "/alyonapmw/static/js/main.792a742d.js.map",
     "263.bb4bd44d.chunk.css.map": "/alyonapmw/static/css/263.bb4bd44d.chunk.css.map",
-    "263.4eed8c32.chunk.js.map": "/alyonapmw/static/js/263.4eed8c32.chunk.js.map",
+    "263.5254f09c.chunk.js.map": "/alyonapmw/static/js/263.5254f09c.chunk.js.map",
     "128.429890e4.chunk.css.map": "/alyonapmw/static/css/128.429890e4.chunk.css.map",
-    "128.e6591844.chunk.js.map": "/alyonapmw/static/js/128.e6591844.chunk.js.map",
+    "128.a536037c.chunk.js.map": "/alyonapmw/static/js/128.a536037c.chunk.js.map",
     "742.fd4ee991.chunk.css.map": "/alyonapmw/static/css/742.fd4ee991.chunk.css.map",
     "742.e86a6c1d.chunk.js.map": "/alyonapmw/static/js/742.e86a6c1d.chunk.js.map",
     "348.fa136b4b.chunk.css.map": "/alyonapmw/static/css/348.fa136b4b.chunk.css.map",
-    "348.d94eb467.chunk.js.map": "/alyonapmw/static/js/348.d94eb467.chunk.js.map",
+    "348.829e14af.chunk.js.map": "/alyonapmw/static/js/348.829e14af.chunk.js.map",
     "86.4ab953ed.chunk.css.map": "/alyonapmw/static/css/86.4ab953ed.chunk.css.map",
-    "86.67a24a45.chunk.js.map": "/alyonapmw/static/js/86.67a24a45.chunk.js.map",
+    "86.424e3196.chunk.js.map": "/alyonapmw/static/js/86.424e3196.chunk.js.map",
     "255.0fe14f37.chunk.css.map": "/alyonapmw/static/css/255.0fe14f37.chunk.css.map",
     "255.c7b61f23.chunk.js.map": "/alyonapmw/static/js/255.c7b61f23.chunk.js.map",
     "270.35d2e955.chunk.js.map": "/alyonapmw/static/js/270.35d2e955.chunk.js.map",
@@ -76,6 +76,6 @@
   },
   "entrypoints": [
     "static/css/main.5c84f89e.css",
-    "static/js/main.7ba18438.js"
+    "static/js/main.792a742d.js"
   ]
 }

@@ -275,6 +275,9 @@
         padding: 20px;
         border-radius: 24px;
     }
+    .main__blockHeadlineText {
+        font-size: 55px;
+    }
     .applicationForm__content {
         border: 2px solid #FFD87C;
         border-radius: 21px;
@@ -310,7 +313,7 @@
 }
 @media screen and (max-width: 489px) {
     .main__blockHeadlineText {
-        font-size: 63px;
+        font-size: 49px;
     }
     .main__blockHeadlineSubText {
         font-size: 27px;
@@ -422,5 +425,10 @@
     }
     .applicationForm__contentFormCheckboxWrapper { 
         margin-left: 25px;
+    }
+}
+@media screen and (max-width: 330px) {
+    .main__blockHeadlineText {
+        font-size: 34px;
     }
 }

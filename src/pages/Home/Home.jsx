@@ -148,15 +148,15 @@ const Home = () => {
                             <div className={styles.main__aboutItem}>
                                 <div className={styles.main__aboutItemText}>
                                     <img src={Ellipse} draggable="false" alt="" />
-                                    <p><span style={{fontWeight: "bold"}}>Тренер и организатор</span> мастер-классов Sviato Academy в Афинах с 2022 г.</p>
+                                    <p><span style={{fontWeight: "bold"}}>Εκπαιδεύτρια και διοργανωτής</span> των Masterclass της Sviato Academy στην Αθήνα από το 2020.</p>
                                 </div>
                                 <div className={styles.main__aboutItemText}>
                                     <img src={Ellipse} draggable="false" alt="" />
-                                    <p><span style={{fontWeight: "bold"}}>Гран-при 2022 г.</span> в Афинах на чемпионате World's Greece Cyprus</p>
+                                    <p><span style={{fontWeight: "bold"}}>Grand Prix 2020</span> στην Αθήνα στο Πρωτάθλημα World's Greece Cyprus</p>
                                 </div>
                                 <div className={styles.main__aboutItemText}>
                                     <img src={Ellipse} draggable="false" alt="" />
-                                    <p><span style={{fontWeight: "bold"}}>Более 15 лет</span> в beauty-индустрии</p>
+                                    <p><span style={{fontWeight: "bold"}}>Περισσότερα από 15 χρόνια</span> στον κλάδο αισθητικής</p>
                                 </div>
                             </div>
                             <div className={styles.main__aboutItem}>
@@ -165,18 +165,18 @@ const Home = () => {
                                 </div>
                                 <Link to={routes.CONTACTS}>
                                 <div className={styles.main__aboutItemBtnWrapper}>
-                                    <button className={styles.main__aboutItemBtn}>Записаться на курс <img width={setEuroWidth()} className={styles.main__aboutItemEuro} draggable="false" src={Euro} alt="" /></button>
+                                    <button className={styles.main__aboutItemBtn}>Εγγραφή σε σεμινάριο <img width={setEuroWidth()} className={styles.main__aboutItemEuro} draggable="false" src={Euro} alt="" /></button>
                                 </div>
                                 </Link>
                             </div>
                             <div className={styles.main__aboutItem}>
                                 <div className={styles.main__aboutItemText}>
                                     <img src={Ellipse} draggable="false" alt="" />
-                                    <p><span style={{fontWeight: "bold"}}>Победитель и призер </span> множества турниров и чемпионатов с 2019 г.</p>
+                                    <p><span style={{fontWeight: "bold"}}>Νικήτρια πολλών διαγωνισμών </span> και πρωταθλημάτων από το 2019</p>
                                 </div>
                                 <div className={styles.main__aboutItemText}>
                                     <img src={Ellipse} draggable="false" alt="" />
-                                    <p><span style={{fontWeight: "bold"}}>Сертифицированный мастер, судья и тренер </span> по перманентному макияжу в Greece Athens</p>
+                                    <p><span style={{fontWeight: "bold"}}>Πιστοποιημένη τεχνίτρια, κριτής και εκπαιδεύτρια </span> στον τομέα του Ημιμόνιμου Μακιγιάζ στην Αθήνα, Ελλάδα</p>
                                 </div>
                             </div>
                         </div>
@@ -189,8 +189,8 @@ const Home = () => {
                     <div className={styles.achievements__block}>
                         <ScrollAnimation animateIn='fadeIn' animateOnce={true}>
                             <div className={styles.achievements__blockHeadline}>
-                                <h1 className={styles.achievements__blockHeadlineText}>Косметология, мастер маникюра, подолог,  визажист-стилист, мастер и тренер перманентного макияжа...<br />
-                                Более 15 лет опыта, шишек, взлетов и падений</h1>
+                                <h1 className={styles.achievements__blockHeadlineText}>ΚΟΣΜΕΤΟΛΟΓΟΣ, ΤΕΧΝΙΤΡΙΑ ΝΥΧΙΩΝ, ΠΟΔΟΛΟΓΟΣ, ΑΙΣΘΗΤΙΚΟΣ-ΣΤΥΛΙΣΤΑΣ, ΤΕΧΝΙΤΡΙΑ ΚΑΙ ΕΚΠΑΙΔΕΥΤΡΙΑ ΗΜΙΜΟΝΙΜΟΥ ΜΑΚΙΓΙΑΖ…<br />
+                                ΠΕΡΙΣΣΟΤΕΡΑ ΑΠΟ 15 ΧΡΟΝΙΑ ΕΜΠΕΙΡΙΑΣ ΜΕ ΕΠΙΤΥΧΙΕΣ ΚΑΙ ΑΠΟΤΥΧΙΕΣ</h1>
                             </div>
                         </ScrollAnimation>
                         <div className={styles.achievements__content}>
@@ -200,10 +200,9 @@ const Home = () => {
                                         <QuoteLeft />
                                     </div>
                                     <div className={styles.achievements__contentQuoteItem}>
-                                        <p>Уметь зарабатывать - навык, который я выработала, сменив несколько стран и сфер деятельности. 
-                                            Будучи молодой и неопытной, оставшись одной с маленьким ребёнком на руках, нужно было найти способ обеспечить свою семью.</p>
+                                        <p>Την ικανότητα να βγάζω χρήματα την απέκτησα αλλάζοντας μερικές χώρες και τομείς δραστηριότητας. Ούσα νέα και άπειρη, με ένα μικρό παιδί στα χέρια, έπρεπε να βρω έναν τρόπο να συντηρώ την οικογένειά μου.</p>
                                             <br />
-                                        <p>Мне есть чем поделиться. Я изнутри знакома с кухней сферы красоты и теперь точно знаю, где прячутся <span style={{fontWeight: "600"}}>самые высокие доходы.</span></p>
+                                        <p>Έχω να μοιραστώ πράγματα. Γνωρίζω εκ των έσω τη σφαίρα της αισθητικής και πλέον ξέρω που <span style={{fontWeight: "600"}}>κρύβονται τα υψηλά έσοδα.</span></p>
                                     </div>
                                     <div className={styles.achievements__contentQuoteItem}>
                                         <QuoteRight />
@@ -217,8 +216,8 @@ const Home = () => {
                                         <Trophy />
                                     </div>
                                     <div className={styles.achievements__contentTitlesItemText}>
-                                        <p style={{fontWeight: "600"}}>Призёр и победитель</p>
-                                        <p>на International Championship IV 2021, Interunim II 2020, International PMU Tournament Beauty Expo 2019</p>
+                                        <p style={{fontWeight: "600"}}>Νικήτρια</p>
+                                        <p>στο International Championship IV 2021, Interunim II 2020, International PMU Tournament Beauty Expo 2019</p>
                                     </div>
                                 </div>
                                 </ScrollAnimation>
@@ -228,8 +227,8 @@ const Home = () => {
                                         <Master />
                                     </div>
                                     <div className={styles.achievements__contentTitlesItemText}>
-                                        <p style={{fontWeight: "600"}}>Гран-при 2022 г.</p>
-                                        <p>в Афинах на чемпионате Worlds Greece Cyprus</p>
+                                        <p style={{fontWeight: "600"}}>Grand Prix 2022</p>
+                                        <p>στην Αθήνα στο Πρωτάθλημα Worlds Greece Cyprus</p>
                                     </div>
                                 </div>
                                 </ScrollAnimation>
@@ -239,8 +238,8 @@ const Home = () => {
                                         <Judge />
                                     </div>
                                     <div className={styles.achievements__contentTitlesItemText}>
-                                        <p style={{fontWeight: "600"}}>Судья чемпионата</p>
-                                        <p>IBV World Beauty Voyage Молдовы 2021</p>
+                                        <p style={{fontWeight: "600"}}>Κριτής στο Πρωτάθλημα</p>
+                                        <p>IBV World Beauty Voyage 2021 στη Μολδαβία</p>
                                     </div>
                                 </div>
                                 </ScrollAnimation>
@@ -250,8 +249,8 @@ const Home = () => {
                                         <Certificate />
                                     </div>
                                     <div className={styles.achievements__contentTitlesItemText}>
-                                        <p style={{fontWeight: "600"}}>Сертифицированный мастер и тренер</p>
-                                        <p>перманентного макияжа в Greece Athens</p>
+                                        <p style={{fontWeight: "600"}}>Πιστοποιημένη τεχνίτρια</p>
+                                        <p>και εκπαιδεύτρια Ημιμόνιμου Μακιγιάζ στην Αθήνα, Ελλάδα</p>
                                     </div>
                                 </div>
                                 </ScrollAnimation>
@@ -261,8 +260,8 @@ const Home = () => {
                                         <Trainer />
                                     </div>
                                     <div className={styles.achievements__contentTitlesItemText}>
-                                        <p style={{fontWeight: "600"}}>Тренер и организатор</p>
-                                        <p>мастер-классов Sviato Academy в Афинах с 2022 г.</p>
+                                        <p style={{fontWeight: "600"}}>Εκπαιδεύτρια και διοργανωτής</p>
+                                        <p>των Masterclass της Sviato Academy στην Αθήνα από το 2022</p>
                                     </div>
                                 </div>
                                 </ScrollAnimation>
@@ -282,20 +281,20 @@ const Home = () => {
                         <div className={styles.makeup__content}>
                             <div className={styles.makeup__contentItem}>
                                 <div className={styles.makeup__contentItemHeadline}>
-                                    <h1 className={styles.makeup__contentItemHeadlineText}>ПЕРМАНЕНТНЫЙ МАКИЯЖ</h1>
+                                    <h1 className={styles.makeup__contentItemHeadlineText}>ΗΜΙΜΟΝΙΜΟ ΜΑΚΙΓΙΑΖ</h1>
                                 </div>
                                 <div className={styles.makeup__contentItemTextWrapper}>
                                     <p className={styles.makeup__contentItemText}>
-                                    Один из самых прибыльных бизнесов в сфере красоты согласно последним статистическим данным 2022.
+                                    Μία από τις πιο κερδοφόρες επιχειρήσεις στον κλάδο της ομορφιάς σύμφωνα με τα τελευταία στατιστικά στοιχεία του 2022.
                                     </p>
                                     <br />
                                     <p className={styles.makeup__contentItemText}>
-                                    Узнай у меня как попасть в профессию с нуля и начать зарабатывать уже <span style={{fontWeight: "600"}}>спустя 5 дней после прохождения базового курса!</span>
+                                    Μάθε από εμένα πώς να διεισδύσεις στο επάγγελμα από το μηδέν και να αρχίσεις να βγάζεις χρήματα <span style={{fontWeight: "600"}}>μόλις 5 ημέρες μετά την ολοκλήρωση της βασικής εκπαίδευσης!</span>
                                     </p>
                                 </div>
                                 <Link to={routes.CONTACTS}>
                                     <div className={styles.makeup__contentItemBtnWrapper}>
-                                        <button className={styles.makeup__contentItemBtn}>Записаться на курс</button>
+                                        <button className={styles.makeup__contentItemBtn}>Εγγραφή σε σεμινάριο</button>
                                     </div>
                                 </Link>
                             </div>
@@ -304,7 +303,7 @@ const Home = () => {
                                     <img className={styles.makeup__contentItemImg} width={setWalletWidth()} src={Wallet} alt="" />
                                 </div>
                                 <div className={styles.makeup__contentItemImgTextWrapper}>
-                                    <p className={styles.makeup__contentItemImgText}>Вложения в обучение окупаются в первый же месяц работы!</p>
+                                    <p className={styles.makeup__contentItemImgText}>Οι επενδύσεις στην εκπαίδευση αποσβένονται τον πρώτο κιόλας μήνα εργασίας!</p>
                                 </div>
                             </div>
                         </div>
@@ -316,8 +315,8 @@ const Home = () => {
                         <div className={styles.services__content}>
                             <ScrollAnimation animateIn='fadeIn' animateOnce={true}>
                             <div className={styles.services__contentHeadline}>
-                                <h1 className={styles.services__contentHeadlineText}>УСЛУГИ</h1>
-                                <h3 className={styles.services__contentHeadlineSubText}>Permanent Makeup в техниках:</h3>
+                                <h1 className={styles.services__contentHeadlineText} style={{textTransform: "uppercase"}}>Υπηρεσίες</h1>
+                                <h3 className={styles.services__contentHeadlineSubText}>Τεχνικές Permanent Makeup:</h3>
                             </div>
                             </ScrollAnimation>
                             <ScrollAnimation animateIn='fadeIn' animateOnce={true}>
@@ -325,7 +324,7 @@ const Home = () => {
                             <div className={styles.services__contentItemWrapper}>
                                 <div className={styles.services__contentItem}>
                                     <div className={styles.services__contentItemServiceHeadline}>
-                                        <h3>БРОВИ</h3>
+                                        <h3>ΦΡΥΔΙΑ</h3>
                                     </div>
                                     <div className={styles.services__contentItemService}>
                                         <p>- Magic Shading</p>
@@ -337,7 +336,7 @@ const Home = () => {
                                 <div className={styles.services__contentItemWrapper}>
                                     <div className={styles.services__contentItem}>
                                         <div className={styles.services__contentItemServiceHeadline}>
-                                            <h3>ГЛАЗА</h3>
+                                            <h3>ΜΑΤΙΑ</h3>
                                         </div>
                                         <div className={styles.services__contentItemService}>
                                             <p>- Softliner</p>
@@ -349,7 +348,7 @@ const Home = () => {
                                 <div className={styles.services__contentItemWrapper}>
                                     <div className={styles.services__contentItem}>
                                         <div className={styles.services__contentItemServiceHeadline}>
-                                            <h3>ГУБЫ</h3>
+                                            <h3>ΧΕΙΛΗ</h3>
                                         </div>
                                         <div className={styles.services__contentItemService}>
                                             <p>- Aquarelle Lips</p>
@@ -367,7 +366,7 @@ const Home = () => {
                     <div className={styles.portfolio__block}>
                         <div className={styles.portfolio__content}>
                             <div className={styles.portfolio__contentHeadline}>
-                                <h1 className={styles.portfolio__contentHeadlineText}>ПОРТФОЛИО</h1>
+                                <h1 className={styles.portfolio__contentHeadlineText} style={{textTransform: "uppercase"}}>Χαρτοφυλάκιο</h1>
                             </div>
                             <div className={styles.portfolio__contentItems}>
                                 <ScrollAnimation animateIn='bounceInLeft' animateOnce={true}>
@@ -389,7 +388,7 @@ const Home = () => {
                         </div>
                         <Link to={routes.PORTFOLIO}>
                             <div className={styles.portfolio__contentBtnWrapper}>
-                                <button className={styles.portfolio__contentBtn}>Смотреть больше работ</button>
+                                <button className={styles.portfolio__contentBtn}>Δες κι άλλες δουλειές</button>
                             </div>
                         </Link>
                     </div>
@@ -400,7 +399,7 @@ const Home = () => {
                     <div className={styles.best__block}>
                         <div className={styles.best__content}>
                             <div className={styles.best__contentHeadline}>
-                                <h1 className={styles.best__contentHeadlineText}>ЛУЧШИЕ КУРСЫ</h1>
+                                <h1 className={styles.best__contentHeadlineText}>ΚΑΛΥΤΕΡΑ ΣΕΜΙΝΑΡΙΑ</h1>
                             </div>
                             <div className={styles.best__content}>
                                 <div className={styles.best__contentItems}>
@@ -409,8 +408,8 @@ const Home = () => {
                                     </div>
                                     <div className={styles.best__contentItem}>
                                         <div className={styles.best__contentItemTextWrapper}>
-                                            <p className={styles.best__contentItemText}><span style={{fontWeight: "600"}}>5 дней теории и практики</span>, чтобы стать готовым и практикующим мастером перманентного макияжа!</p>
-                                            <p className={styles.best__contentItemText}>За 5 дней я предоставлю вам самую полезную информацию, знания и опыт <span style={{fontWeight: "600"}}>по самым востребованным техникам</span> для максимально естественного и элегантного результата!</p>
+                                            <p className={styles.best__contentItemText}><span style={{fontWeight: "600"}}>5 ημέρες θεωρίας και πρακτικής</span>, για να είσαι έτοιμος ασκούμενος τεχνίτης ημιμόνιμου μακιγιάζ!</p>
+                                            <p className={styles.best__contentItemText}>Σε 5 ημέρες θα σας παρουσιάσω τις πιο χρήσιμες πληροφορίες, τις <span style={{fontWeight: "600"}}>εμπειρία πάνω στις πιο δημοφιλείς τεχνικές</span> για το πιο φυσικό και εκλεπτυσμένο αποτέλεσμα!</p>
                                         </div>
                                     </div>
                                 </div>
@@ -421,47 +420,47 @@ const Home = () => {
                                         <div className={styles.best__contentBasicCourseSkills}>
                                             <div className={styles.best__contentBasicCourseSkill}>
                                                 <img draggable="false" src={Checkmark} width={45} alt="" />
-                                                <p className={styles.best__contentBasicCourseSkillText}>Волшебная растушевка на бровях</p>
+                                                <p className={styles.best__contentBasicCourseSkillText}>Magic Shading στα φρύδια</p>
                                             </div>
                                             <div className={styles.best__contentBasicCourseSkill}>
                                                 <img draggable="false" src={Checkmark} width={45} alt="" />
-                                                <p className={styles.best__contentBasicCourseSkillText}>Акварель Губы</p>
+                                                <p className={styles.best__contentBasicCourseSkillText}>Aquarelle Lips</p>
                                             </div>
                                             <div className={styles.best__contentBasicCourseSkill}>
                                                 <img draggable="false" src={Checkmark} width={45} alt="" />
-                                                <p className={styles.best__contentBasicCourseSkillText}>Мягкая подводка для глаз</p>
+                                                <p className={styles.best__contentBasicCourseSkillText}>Soft Liner στα μάτια</p>
                                             </div>
                                         </div>
                                         <div className={styles.best__contentBasicCourseSep}></div>
                                         <div className={styles.best__contentBasicCourseKnowledge}>
-                                            <h1 className={styles.best__contentBasicCourseKnowledgeHeadline}>ЗА 5 ДНЕЙ ПРОГРАММЫ ВЫ УЗНАЕТЕ:</h1>
+                                            <h1 className={styles.best__contentBasicCourseKnowledgeHeadline}>ΣΕ 5 ΜΕΡΕΣ ΒΑΣΙΚΗΣ ΕΚΠΑΙΔΕΥΣΗΣ ΘΑ ΜΑΘΕΙΣ:</h1>
                                             <ul className={styles.best__contentBasicCourseKnowledgeText}>
-                                                <li className={styles.best__contentBasicCourseKnowledgeTextItem}>изготовление эскиза за 10 минут;</li>
-                                                <li className={styles.best__contentBasicCourseKnowledgeTextItem}>типы кожи и колористика;</li>
-                                                <li className={styles.best__contentBasicCourseKnowledgeTextItem}>колористика пигментов;</li>
-                                                <li className={styles.best__contentBasicCourseKnowledgeTextItem}>анестезия;</li>
-                                                <li className={styles.best__contentBasicCourseKnowledgeTextItem}>правильная штриховка и постановка руки;</li>
-                                                <li className={styles.best__contentBasicCourseKnowledgeTextItem}>3 зоны лица и 3 техники;</li>
-                                                <li className={styles.best__contentBasicCourseKnowledgeTextItem}>отработка на латексе и на 6 моделях.</li>
+                                                <li className={styles.best__contentBasicCourseKnowledgeTextItem}>Δημιουργία σκίτσου σε 10 λεπτά;</li>
+                                                <li className={styles.best__contentBasicCourseKnowledgeTextItem}>Τύποι επιδερμίδας και χρωματολογία;</li>
+                                                <li className={styles.best__contentBasicCourseKnowledgeTextItem}>Χρωστικές;</li>
+                                                <li className={styles.best__contentBasicCourseKnowledgeTextItem}>Αναισθησία;</li>
+                                                <li className={styles.best__contentBasicCourseKnowledgeTextItem}>Σωστή σκίαση και τοποθέτηση χεριού;</li>
+                                                <li className={styles.best__contentBasicCourseKnowledgeTextItem}>3 ζώνες προσώπου και 3 τεχνικές;</li>
+                                                <li className={styles.best__contentBasicCourseKnowledgeTextItem}>Πρακτική σε λατέξ και σε 6 μοντέλα.</li>
                                             </ul>
                                         </div>
                                         <div className={styles.best__contentBasicCourseSep}></div>
                                         <div className={styles.best__contentBasicCourseResults}>
                                             <div className={styles.best__contentBasicCourseResultsHeadline}>
                                                 <img draggable="false" className={styles.best__contentBasicCourseResultsHeadlineImg} width={60} src={Crown} alt="" />
-                                                <h1 className={styles.best__contentBasicCourseResultsHeadlineText}>ПО ИТОГАМ ВЫ ПОЛУЧИТЕ:</h1>
+                                                <h1 className={styles.best__contentBasicCourseResultsHeadlineText}>ΩΣ ΑΠΟΤΕΛΕΣΜΑ ΘΑ ΛΑΒΕΤΕ:</h1>
                                             </div>
                                             <ul className={styles.best__contentBasicCourseResultsText}>
-                                                <li className={styles.best__contentBasicCourseResultsTextItem}>Сертификат <span style={{fontWeight: "600"}}>мирового уровня</span> от Академии Свято</li>
+                                                <li className={styles.best__contentBasicCourseResultsTextItem}>Πιστοποιητικό <span style={{fontWeight: "600"}}>διεθνούς επιπέδου από</span> τη Sviato Academy</li>
                                                 <br />
-                                                <li className={styles.best__contentBasicCourseResultsTextItem}>1 месяц <span style={{fontWeight: "600"}}>БЕСПЛАТНОГО</span> доступа к платформе Beauty Class с уроками от ведущих инструкторов Академии</li>
+                                                <li className={styles.best__contentBasicCourseResultsTextItem}>1 μήνα <span style={{fontWeight: "600"}}>ΔΩΡΕΑΝ</span> πρόσβαση στην πλατφόρμα Beauty Class με μαθήματα από τους κορυφαίους εκπαιδευτές της Ακαδημίας</li>
                                             </ul>          
                                         </div>
                                         <div className={styles.best__contentBasicCourseSep}></div>
                                         <div className={styles.best__contentBasicCourseBonus}>
                                             <h1 className={styles.best__contentBasicCourseBonusHeadline}>BONUS</h1>
-                                            <p className={styles.best__contentBasicCourseBonusText}>Стартовый набор для каждого ученика, в который входит  машинка от Sviato Academy, иглы и пигменты</p>
-                                            <p className={styles.best__contentBasicCourseBonusTextSecond}><span className={styles.best__plus}>+</span> Пигменты, лайнер для эскиза, все обучающие материалы.</p>
+                                            <p className={styles.best__contentBasicCourseBonusText}>Βασικό kit για τον κάθε μαθητή που αποτελείται από ένα μηχάνημα της Sviato Academy, βελόνες και χρωστικές</p>
+                                            <p className={styles.best__contentBasicCourseBonusTextSecond}><span className={styles.best__plus}>+</span> Liner για το σκίτσο και όλο το διδακτικό υλικό</p>
                                        </div>
                                        <div className={styles.best__contentBasicCourseSep}></div>
                                        <h1 className={styles.best__contentBasicCoursePrice}>1900 €</h1>
@@ -473,11 +472,11 @@ const Home = () => {
                     <div className={styles.best__more}>
                         <div className={styles.best__moreLocation}>
                             <img className={styles.best__moreLocationImg} draggable="false" src={Location} width={75} alt="" />
-                            <p className={styles.best__moreLocationText}>Афины</p>
+                            <p className={styles.best__moreLocationText}>Αθήνα</p>
                         </div>
                         <Link to={routes.COURSES}>
                             <div className={styles.best__moreBtnWrapper}>
-                                <button className={styles.best__moreBtn}>Подробнее о курсах</button>
+                                <button className={styles.best__moreBtn}>Λεπτομέρειες σεμιναρίων</button>
                             </div>
                         </Link>
                     </div>
@@ -487,7 +486,7 @@ const Home = () => {
                     <div className={styles.students__block}>
                         <div className={styles.students__content}>
                             <div className={styles.students__contentHeadline}>
-                                <h1 className={styles.students__contentHeadlineText}>РАБОТЫ СТУДЕНТОВ</h1>
+                                <h1 className={styles.students__contentHeadlineText}>ΔΟΥΛΕΙΕΣ ΜΑΘΗΤΩΝ</h1>
                             </div>
                             <ScrollAnimation animateIn='bounceInLeft' animateOnce={true}>
                             <div className={styles.students__contentItems}>
@@ -513,7 +512,7 @@ const Home = () => {
                             </ScrollAnimation>
                             <Link to={routes.PORTFOLIO}>
                                 <div className={styles.students__contentBtnWrapper}>
-                                    <button className={styles.students__contentBtn}>Больше работ</button>
+                                    <button className={styles.students__contentBtn}>Περισσότερες δουλειές</button>
                                 </div>
                             </Link>
                         </div>
@@ -525,21 +524,21 @@ const Home = () => {
                     <div className={styles.applicationForm__block}>
                         <div className={styles.applicationForm__content}>
                             <div className={styles.applicationForm__contentHeadline}>
-                                <h1 className={styles.applicationForm__contentHeadlineText}>ЗАПОЛНИТЕ ФОРМУ,</h1>
-                                <p className={styles.applicationForm__contentHeadlineSubText}>чтобы оставить заявку на курс</p>
+                                <h1 className={styles.applicationForm__contentHeadlineText}>Συμπληρώστε τη φόρμα,</h1>
+                                <p className={styles.applicationForm__contentHeadlineSubText}>για να υποβάλλετε αίτημα ενδιαφέροντος</p>
                             </div>
                             <form className={styles.applicationForm__contentForm}>
                                 <div className={styles.applicationForm__contentFormInputs}>
-                                    <input className={styles.applicationForm__contentFormInput} type="text" placeholder=" &#x1F464;  Ваше имя" />
-                                    <input className={styles.applicationForm__contentFormInput} type="phonenumber" placeholder=" &#x260E;  Ваш номер телефона" />
-                                    <input className={styles.applicationForm__contentFormInput} type="text" placeholder=" &#x1F5E8;  Комментарий" />
+                                    <input className={styles.applicationForm__contentFormInput} type="text" placeholder=" &#x1F464;  Όνομα" />
+                                    <input className={styles.applicationForm__contentFormInput} type="phonenumber" placeholder=" &#x260E;  Τηλέφωνο" />
+                                    <input className={styles.applicationForm__contentFormInput} type="text" placeholder=" &#x1F5E8;  Σχόλιο" />
                                 </div>
                                 <div className={styles.applicationForm__contentFormBtnWrapper}>
-                                    <button className={styles.applicationForm__contentFormBtn}>Оставить заявку</button>
+                                    <button className={styles.applicationForm__contentFormBtn}>Υποβολή αίτησης</button>
                                 </div>
                                 <div className={styles.applicationForm__contentFormCheckboxWrapper}>
                                     <input type="checkbox" className={styles.applicationForm__contentFormCheckbox} id="privacy_policy" name="privacy_policy" value="yes" />
-                                    <label className={styles.applicationForm__contentFormCheckboxLabel} htmlFor="privacy_policy">Я принимаю условия обработки персональных данных.</label>
+                                    <label className={styles.applicationForm__contentFormCheckboxLabel} htmlFor="privacy_policy">Αποδέχομαι τους όρους επεξεργασίας προσωπικών δεδομένων.</label>
                                 </div>
                             </form>
                         </div>

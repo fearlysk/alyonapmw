@@ -19,27 +19,27 @@ const BurgerMenu = (props) => {
                 <ul className={showBurger ? styles.header__burgerLinksItems : styles.header__burgerLinksItemsHidden}>
                     <li className={styles.header__burgerLinksItem}>
                         <NavLink to={routes.HOME} style={({ isActive }) => { return isActive ? { color: "#e0a933", fontWeight: "medium", 
-                        filter: "drop-shadow(0px 2px 4px rgba(255, 238, 83, 0.45))", borderBottom: "1px solid #FFFFFF", paddingBottom: "6px" } : {};}}>Главная
+                        filter: "drop-shadow(0px 2px 4px rgba(255, 238, 83, 0.45))", borderBottom: "1px solid #FFFFFF", paddingBottom: "6px" } : {};}}>Αρχική
                         </NavLink>
                     </li>
                     <li className={styles.header__burgerLinksItem}>
                         <NavLink to={routes.PORTFOLIO} style={({ isActive }) => { return isActive ? { color: "#e0a933", fontWeight: "medium", 
-                        filter: "drop-shadow(0px 2px 4px rgba(255, 238, 83, 0.45))", borderBottom: "1px solid #FFFFFF", paddingBottom: "6px" } : {};}}>Портфолио
+                        filter: "drop-shadow(0px 2px 4px rgba(255, 238, 83, 0.45))", borderBottom: "1px solid #FFFFFF", paddingBottom: "6px" } : {};}}>Χαρτοφυλάκιο
                         </NavLink>
                     </li>
                     <li className={styles.header__burgerLinksItem}>
                         <NavLink to={routes.SERVICES} style={({ isActive }) => { return isActive ? { color: "#e0a933", fontWeight: "medium", 
-                        filter: "drop-shadow(0px 2px 4px rgba(255, 238, 83, 0.45))", borderBottom: "1px solid #FFFFFF", paddingBottom: "6px" } : {};}}>Услуги
+                        filter: "drop-shadow(0px 2px 4px rgba(255, 238, 83, 0.45))", borderBottom: "1px solid #FFFFFF", paddingBottom: "6px" } : {};}}>Υπηρεσίες
                         </NavLink>
                     </li>
                     <li className={styles.header__burgerLinksItem}>
                         <NavLink to={routes.COURSES} style={({ isActive }) => { return isActive ? { color: "#e0a933", fontWeight: "medium", 
-                        filter: "drop-shadow(0px 2px 4px rgba(255, 238, 83, 0.45))", borderBottom: "1px solid #FFFFFF", paddingBottom: "6px" } : {};}}>Курсы
+                        filter: "drop-shadow(0px 2px 4px rgba(255, 238, 83, 0.45))", borderBottom: "1px solid #FFFFFF", paddingBottom: "6px" } : {};}}>Σεμινάρια
                         </NavLink>
                     </li>
                     <li className={styles.header__burgerLinksItem}>
                         <NavLink to={routes.CONTACTS} style={({ isActive }) => { return isActive ? { color: "#e0a933", fontWeight: "medium", 
-                        filter: "drop-shadow(0px 2px 4px rgba(255, 238, 83, 0.45))", borderBottom: "1px solid #FFFFFF", paddingBottom: "6px" } : {};}}>Контакты
+                        filter: "drop-shadow(0px 2px 4px rgba(255, 238, 83, 0.45))", borderBottom: "1px solid #FFFFFF", paddingBottom: "6px" } : {};}}>Επικοινωνία
                         </NavLink>
                     </li>
                 </ul>

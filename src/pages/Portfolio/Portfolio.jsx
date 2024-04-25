@@ -101,11 +101,11 @@ const Portfolio = () => {
             <div className={styles.main}>
                 <div id="portfolio" className={styles.main__block}>
                     <div className={styles.main__blockHeadline}>
-                       <h1 className={styles.main__blockHeadlineText}>ПОРТФОЛИО</h1>
+                       <h1 className={styles.main__blockHeadlineText} style={{textTransform: "uppercase"}}>Χαρτοφυλάκιο</h1>
                     </div>
                     <div className={styles.main__content}>
                         <div className={styles.main__contentSection}>
-                            <h1 className={styles.main__contentSectionHeadline}>ГЛАЗА</h1>
+                            <h1 className={styles.main__contentSectionHeadline} style={{textTransform: "uppercase"}}>Μάτια</h1>
                             <div className={styles.main__contentSectionItems}>
                                 <img src={Eyes1} draggable="false" width={setImgWidth()} alt="" />
                                 <img src={Eyes2} draggable="false" width={setImgWidth()} alt="" />
@@ -123,7 +123,7 @@ const Portfolio = () => {
                         </div>
                         <ScrollAnimation animateIn='fadeIn' animateOnce={true}>
                         <div className={styles.main__contentSection}>
-                            <h1 className={styles.main__contentSectionHeadline}>БРОВИ</h1>
+                            <h1 className={styles.main__contentSectionHeadline} style={{textTransform: "uppercase"}}>φρύδια</h1>
                             <div className={styles.main__contentSectionItems}>
                                 <img src={Brows1} draggable="false" width={setImgWidth()} alt="" />
                                 <img src={Brows2} draggable="false" width={setImgWidth()} alt="" />
@@ -142,7 +142,7 @@ const Portfolio = () => {
                         </ScrollAnimation>
                         <ScrollAnimation animateIn='bounceInLeft' animateOnce={true}>
                         <div className={styles.main__contentSection}>
-                            <h1 className={styles.main__contentSectionHeadline}>ГУБЫ</h1>
+                            <h1 className={styles.main__contentSectionHeadline} style={{textTransform: "uppercase"}}>χείλη</h1>
                             <div className={styles.main__contentSectionItems}>
                                 <img src={Lips1} draggable="false" width={setImgWidth()} alt="" />
                                 <img src={Lips2} draggable="false" width={setImgWidth()} alt="" />
@@ -161,7 +161,7 @@ const Portfolio = () => {
                         </ScrollAnimation>
                         <ScrollAnimation animateIn='bounceInRight' animateOnce={true}>
                         <div className={styles.main__contentSection}>
-                            <h1 className={styles.main__contentSectionHeadline}>МИНИ-ТАТУ</h1>
+                            <h1 className={styles.main__contentSectionHeadline} style={{textTransform: "uppercase"}}>MINI TATTOO</h1>
                             <div className={styles.main__contentSectionItemsTattoo}>
                                 <img src={MiniTattoo1} draggable="false" width={setImgWidth()} alt="" />
                                 <img src={MiniTattoo2} draggable="false" width={setImgWidth()} alt="" />
@@ -177,7 +177,7 @@ const Portfolio = () => {
                         </ScrollAnimation>
                         <ScrollAnimation animateIn='fadeIn' animateOnce={true}>
                         <div className={styles.main__contentSection}>
-                            <h1 className={styles.main__contentSectionHeadline}>REMOVAL</h1>
+                            <h1 className={styles.main__contentSectionHeadline} style={{textTransform: "uppercase"}}>REMOVAL</h1>
                             <div className={styles.main__contentSectionItemsRemoval}>
                                 <img src={Removal1} draggable="false" width={setImgWidth()} alt="" />
                                 <img src={Removal2} draggable="false" width={setImgWidth()} alt="" />
@@ -192,7 +192,7 @@ const Portfolio = () => {
                     <ScrollAnimation animateIn='fadeIn' animateOnce={true}>
                     <div className={styles.main__contentStudent}>
                         <div className={styles.main__blockHeadlineStudent}>
-                            <h1 className={styles.main__blockHeadlineText}>РАБОТЫ СТУДЕНТОВ</h1>
+                            <h1 className={styles.main__blockHeadlineText} style={{textTransform: "uppercase"}}>δουλειές μαθητών</h1>
                         </div>
                         <div className={styles.main__contentStudentItems}>
                             <img src={Students} draggable="false" className={styles.students} alt="" />
@@ -205,21 +205,21 @@ const Portfolio = () => {
                         <div className={styles.applicationForm__block}>
                             <div className={styles.applicationForm__content}>
                                 <div className={styles.applicationForm__contentHeadline}>
-                                    <h1 className={styles.applicationForm__contentHeadlineText}>ЗАПОЛНИТЕ ФОРМУ,</h1>
-                                    <p className={styles.applicationForm__contentHeadlineSubText}>чтобы оставить заявку на курс</p>
+                                    <h1 className={styles.applicationForm__contentHeadlineText}>Συμπληρώστε τη φόρμα,</h1>
+                                    <p className={styles.applicationForm__contentHeadlineSubText}>για να υποβάλλετε αίτημα ενδιαφέροντος</p>
                                 </div>
                                 <form className={styles.applicationForm__contentForm}>
                                     <div className={styles.applicationForm__contentFormInputs}>
-                                        <input className={styles.applicationForm__contentFormInput} type="text" placeholder=" &#x1F464;  Ваше имя" />
-                                        <input className={styles.applicationForm__contentFormInput} type="phonenumber" placeholder=" &#x260E;  Ваш номер телефона" />
-                                        <input className={styles.applicationForm__contentFormInput} type="text" placeholder=" &#x1F5E8;  Комментарий" />
+                                        <input className={styles.applicationForm__contentFormInput} type="text" placeholder=" &#x1F464;  Όνομα" />
+                                        <input className={styles.applicationForm__contentFormInput} type="phonenumber" placeholder=" &#x260E;  Τηλέφωνο" />
+                                        <input className={styles.applicationForm__contentFormInput} type="text" placeholder=" &#x1F5E8;  Σχόλιο" />
                                     </div>
                                     <div className={styles.applicationForm__contentFormBtnWrapper}>
-                                        <button className={styles.applicationForm__contentFormBtn}>Оставить заявку</button>
+                                        <button className={styles.applicationForm__contentFormBtn}>Υποβολή αίτησης</button>
                                     </div>
                                     <div className={styles.applicationForm__contentFormCheckboxWrapper}>
                                         <input type="checkbox" className={styles.applicationForm__contentFormCheckbox} id="privacy_policy" name="privacy_policy" value="yes" />
-                                        <label className={styles.applicationForm__contentFormCheckboxLabel} htmlFor="privacy_policy">Я принимаю условия обработки персональных данных.</label>
+                                        <label className={styles.applicationForm__contentFormCheckboxLabel} htmlFor="privacy_policy">Αποδέχομαι τους όρους επεξεργασίας προσωπικών δεδομένων.</label>
                                     </div>
                                 </form>
                             </div>

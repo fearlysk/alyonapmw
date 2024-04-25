@@ -33,27 +33,27 @@ const Header = () => {
                             <ul className={styles.header__contentLinksList}>
                                 <li className={styles.header__contentLinksListItem}>
                                     <NavLink to={routes.HOME} style={({ isActive }) => { return isActive ? { color: "#e0a933", fontWeight: "medium", borderBottom: "1px solid #FFFFFF", paddingBottom: "5px",
-                                    filter: "drop-shadow(0px 2px 4px rgba(255, 238, 83, 0.45))" } : {};}}>Главная
+                                    filter: "drop-shadow(0px 2px 4px rgba(255, 238, 83, 0.45))" } : {};}}>Αρχική
                                     </NavLink>
                                 </li>
                                 <li className={styles.header__contentLinksListItem}>
                                     <NavLink to={routes.PORTFOLIO} style={({ isActive }) => { return isActive ? { color: "#e0a933", fontWeight: "medium", borderBottom: "1px solid #FFFFFF", paddingBottom: "5px",
-                                    filter: "drop-shadow(0px 2px 4px rgba(255, 238, 83, 0.45))" } : {};}}>Портфолио
+                                    filter: "drop-shadow(0px 2px 4px rgba(255, 238, 83, 0.45))" } : {};}}>Χαρτοφυλάκιο
                                     </NavLink>
                                 </li>
                                 <li className={styles.header__contentLinksListItem}>
                                     <NavLink to={routes.SERVICES} style={({ isActive }) => { return isActive ? { color: "#e0a933", fontWeight: "medium", borderBottom: "1px solid #FFFFFF", paddingBottom: "5px",
-                                    filter: "drop-shadow(0px 2px 4px rgba(255, 238, 83, 0.45))" } : {};}}>Услуги
+                                    filter: "drop-shadow(0px 2px 4px rgba(255, 238, 83, 0.45))" } : {};}}>Υπηρεσίες
                                     </NavLink>
                                 </li>
                                 <li className={styles.header__contentLinksListItem}>
                                     <NavLink to={routes.COURSES} style={({ isActive }) => { return isActive ? { color: "#e0a933", fontWeight: "medium", borderBottom: "1px solid #FFFFFF", paddingBottom: "5px",
-                                    filter: "drop-shadow(0px 2px 4px rgba(255, 238, 83, 0.45))" } : {};}}>Курсы
+                                    filter: "drop-shadow(0px 2px 4px rgba(255, 238, 83, 0.45))" } : {};}}>Σεμινάρια
                                     </NavLink>
                                 </li>
                                 <li className={styles.header__contentLinksListItem}>
                                     <NavLink to={routes.CONTACTS} style={({ isActive }) => { return isActive ? { color: "#e0a933", fontWeight: "medium", borderBottom: "1px solid #FFFFFF", paddingBottom: "5px",
-                                    filter: "drop-shadow(0px 2px 4px rgba(255, 238, 83, 0.45))" } : {};}}>Контакты
+                                    filter: "drop-shadow(0px 2px 4px rgba(255, 238, 83, 0.45))" } : {};}}>Επικοινωνία
                                     </NavLink>
                                 </li>
                             </ul>

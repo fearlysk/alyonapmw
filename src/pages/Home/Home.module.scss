@@ -1270,6 +1270,9 @@
     .makeup {
         margin-top: 100px;
     }
+    .portfolio__contentHeadlineText {
+        font-size: 50px;
+    }
 }
 @media screen and (max-width: 739px) {
     .students__contentItems {
@@ -1483,7 +1486,7 @@
         font-size: 23px;
     }
     .portfolio__contentHeadlineText, .students__contentHeadlineText {
-        font-size: 58px;
+        font-size: 37px;
     }
     .puzzle {
         bottom: -87%;
@@ -1491,6 +1494,9 @@
     }
 }
 @media screen and (max-width: 489px) {
+    .services__contentHeadlineText {
+        font-size: 45px;
+    }
     .best__contentBasicCourseKnowledgeHeadline {
         font-size: 15px;
       }
@@ -1662,12 +1668,12 @@
 }
 @media screen and (max-width: 415px) {
     .portfolio__contentHeadlineText, .students__contentHeadlineText {
-        font-size: 46px;
+        font-size: 33px;
     }
 }
 @media screen and (max-width: 400px) {
     .main__blockHeadlineText {
-        font-size: 50px;
+        font-size: 28px;
         margin-top: 25px;
     }
     .main__aboutItemBtn {
@@ -1700,7 +1706,7 @@
         margin-top: 350px;
     }
     .services__contentHeadlineText {
-        font-size: 60px;
+        font-size: 42px;
     }
     .services__contentHeadlineSubText {
         font-size: 21px;
@@ -1724,6 +1730,7 @@
     .makeup {
         margin-top: -15px;
     }
+    
 }
 @media screen and (max-width: 385px) {
     .main__blockHeadlineText {
@@ -1789,6 +1796,9 @@
         bottom: -81%;
         left: 80%;
     }
+    .students__contentHeadlineText {
+        font-size: 27px;
+    }
 }
 @media screen and (max-width: 325px) {
     .main__blockHeadlineText {
@@ -1798,7 +1808,10 @@
         margin-top: 330px;
     }
     .portfolio__contentHeadlineText, .students__contentHeadlineText {
-        font-size: 37px;
+        font-size: 27px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .puzzle {
         bottom: -77%;

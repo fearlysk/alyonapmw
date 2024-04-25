@@ -348,7 +348,9 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
         justify-items: center;
-
+    }
+    .main__blockHeadlineText {
+        font-size: 70px;
     }
 }
 @media screen and (max-width: 845px) {
@@ -373,6 +375,9 @@
     .main__contentSectionItemsTattoo, .main__contentSectionItemsRemoval {
         width: 85%;
     }
+    .main__blockHeadlineText {
+        font-size: 60px;
+    }
 }
 @media screen and (max-width: 631px) {
     .main__contentSectionItems {
@@ -395,7 +400,7 @@
         grid-template-rows: repeat(2, 1fr);
     }
     .main__blockHeadlineText {
-        font-size: 60px;
+        font-size: 42px;
     }
 }
 @media screen and (max-width: 615px) {
@@ -515,7 +520,7 @@
         width: 75%;
     }
     .main__blockHeadlineText {
-        font-size: 48px;
+        font-size: 30px;
     }
 }
 @media screen and (max-width: 396px) {
@@ -575,7 +580,7 @@
         width: 70%;
     }
     .main__blockHeadlineText {
-        font-size: 36px;
+        font-size: 24px;
     }
     .main__contentSectionHeadline {
         font-size: 30px;

@@ -30,28 +30,28 @@ const Contacts = () => {
             <div ref={Contacts} className={styles.main}>
                 <div id="contacts" className={styles.main__block}>
                     <div className={styles.main__blockHeadline}>
-                       <h1 className={styles.main__blockHeadlineText}>КОНТАКТЫ</h1>
+                       <h1 className={styles.main__blockHeadlineText} style={{textTransform: "uppercase"}}>Επικοινωνία</h1>
                     </div>
                     <div className={styles.main__content}>
                         <section className={styles.applicationForm} aria-labelledby="form">
                             <div className={styles.applicationForm__block}>
                                 <div className={styles.applicationForm__content}>
                                     <div className={styles.applicationForm__contentHeadline}>
-                                        <h1 className={styles.applicationForm__contentHeadlineText}>ЗАПОЛНИТЕ ФОРМУ,</h1>
-                                        <p className={styles.applicationForm__contentHeadlineSubText}>чтобы оставить заявку на курс</p>
+                                        <h1 className={styles.applicationForm__contentHeadlineText}>Συμπληρώστε τη φόρμα,</h1>
+                                        <p className={styles.applicationForm__contentHeadlineSubText}>για να υποβάλλετε αίτημα ενδιαφέροντος</p>
                                     </div>
                                     <form className={styles.applicationForm__contentForm}>
                                         <div className={styles.applicationForm__contentFormInputs}>
-                                            <input className={styles.applicationForm__contentFormInput} type="text" placeholder=" &#x1F464;  Ваше имя" />
-                                            <input className={styles.applicationForm__contentFormInput} type="phonenumber" placeholder=" &#x260E;  Ваш номер телефона" />
-                                            <input className={styles.applicationForm__contentFormInput} type="text" placeholder=" &#x1F5E8;  Комментарий" />
+                                            <input className={styles.applicationForm__contentFormInput} type="text" placeholder=" &#x1F464;  Όνομα" />
+                                            <input className={styles.applicationForm__contentFormInput} type="phonenumber" placeholder=" &#x260E;  Τηλέφωνο" />
+                                            <input className={styles.applicationForm__contentFormInput} type="text" placeholder=" &#x1F5E8;  Σχόλιο" />
                                         </div>
                                         <div className={styles.applicationForm__contentFormBtnWrapper}>
-                                            <button className={styles.applicationForm__contentFormBtn}>Оставить заявку</button>
+                                            <button className={styles.applicationForm__contentFormBtn}>Υποβολή αίτησης</button>
                                         </div>
                                         <div className={styles.applicationForm__contentFormCheckboxWrapper}>
                                             <input type="checkbox" className={styles.applicationForm__contentFormCheckbox} id="privacy_policy" name="privacy_policy" value="yes" />
-                                            <label className={styles.applicationForm__contentFormCheckboxLabel} htmlFor="privacy_policy">Я принимаю условия обработки персональных данных.</label>
+                                            <label className={styles.applicationForm__contentFormCheckboxLabel} htmlFor="privacy_policy">Αποδέχομαι τους όρους επεξεργασίας προσωπικών δεδομένων.</label>
                                         </div>
                                     </form>
                                 </div>

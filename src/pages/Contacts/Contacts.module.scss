@@ -245,6 +245,11 @@
         margin-top: 160px;
     }
 }
+@media screen and (max-width: 790px) {
+    .main__blockHeadlineText {
+        font-size: 60px;
+    }
+}
 @media screen and (max-width: 733px) {
     .main__blockHeadline {
         margin-top: 150px;
@@ -257,7 +262,7 @@
 }
 @media screen and (max-width: 631px) {
     .main__blockHeadlineText {
-        font-size: 60px;
+        font-size: 50px;
     }
 }
 @media screen and (max-width: 615px) {
@@ -310,7 +315,7 @@
 }
 @media screen and (max-width: 489px) {
     .main__blockHeadlineText {
-        font-size: 51px;
+        font-size: 41px;
     }
     .applicationForm {
         width: 360px;
@@ -374,6 +379,9 @@
         padding: 12px;
         border-radius: 24px;
     }
+    .main__blockHeadlineText {
+        font-size: 34px;
+    }
     .applicationForm__content {
         border: 2px solid #FFD87C;
         border-radius: 21px;
@@ -418,6 +426,6 @@
 }
 @media screen and (max-width: 348px) {
     .main__blockHeadlineText {
-        font-size: 40px;
+        font-size: 28px;
     }
 }

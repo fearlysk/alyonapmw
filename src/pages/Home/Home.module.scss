@@ -1128,8 +1128,8 @@
 @media screen and (max-width: 1033px) {
     .makeup__content {
         flex-direction: column;
-        height: 300px;
-        margin-top: 300px;
+        // height: 300px;
+        margin-top: 0px;
     }
     .makeup__contentItem:nth-child(1) {
         text-align: center;
@@ -1152,7 +1152,7 @@
         margin-top: 40px;
     }
     .services {
-        margin-top: 310px;
+        margin-top: 160px;
     }
     .services__contentItemServiceHeadline {
         font-size: 32px;
@@ -1480,7 +1480,7 @@
         font-size: 18px;
     }
     .services {
-        margin-top: 370px;
+        margin-top: 160px;
     }
     .services__contentHeadlineSubText {
         font-size: 23px;
@@ -1703,7 +1703,7 @@
         font-size: 16px;
     }
     .services {
-        margin-top: 350px;
+        margin-top: 100px;
     }
     .services__contentHeadlineText {
         font-size: 42px;
@@ -1728,7 +1728,7 @@
         transition: 0.3s;
     }
     .makeup {
-        margin-top: -15px;
+        margin-top: 55px;
     }
     
 }
@@ -1805,7 +1805,7 @@
         font-size: 36px;
     }
     .services {
-        margin-top: 330px;
+        margin-top: 100px;
     }
     .portfolio__contentHeadlineText, .students__contentHeadlineText {
         font-size: 27px;
